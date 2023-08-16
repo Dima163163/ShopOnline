@@ -1,17 +1,19 @@
+@import 'var.css';
+@import 'font.css';
 @import 'normalize.css';
 @import 'global-style.css';
-@import 'font.css';
-@import 'container.css';
-@import 'about.css';
-@import 'text.css';
-@import 'navigation.css';
-@import 'instructions.css';
-@import 'stages.css';
-
-
-
-
-
-
+@import 'header.css';
+@import 'section.css';
+@import 'laptop-disconts.css';
+@import 'book.css';
+@import 'watch.css';
+@import 'sneakers.css';
+@import 'sneakers-green.css';
+@import 'present.css';
+@import 'macbook.css';
+@import 'newyears-decor.css';
+@import 'dresses.css';
+@import 'him.css';
+@import 'balloons.css';
 
 
