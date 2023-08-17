@@ -11,7 +11,6 @@
 	.balloons {
 		grid-column: 4 / 5;
 		grid-row: 5 / 6;
-		max-height: 60px;
 	} 
 }
 
