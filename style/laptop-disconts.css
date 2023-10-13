@@ -26,7 +26,7 @@
 	align-self: end;
 }
 
-.laptop-disconts__wrapper {
+.disconts__timer {
 	grid-row: 4 / 5;
 	grid-column: 2 / 3;
 	display: grid;
@@ -34,7 +34,7 @@
 	justify-items: center;
 }
 
-.laptop-disconts__subtitle {
+.timer__title{
 	font-family: Lato;
 	font-size: 16px;
 	font-style: normal;
@@ -43,7 +43,7 @@
 	grid-row: 1 / 2;
 }
 
-.laptop-disconts__list {
+.timer__list {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
@@ -51,7 +51,7 @@
 	gap: 30px;
 }
 
-.laptop-disconts__item {
+.timer__item {
 	display: grid;
 	grid-template-columns: repeat(2, auto);
 	gap: 6px;
@@ -63,14 +63,13 @@
 	line-height: 130%;
 }
 
-.laptop-disconts__number {
+.timer__count {
 	font-size: 60px;
 	justify-self: end;
 }
 
-.laptop-disconts__time {
+.timer__units {
 	font-size: 32px;
-	
 }
 
 @media (max-width: 1024px) {
@@ -88,21 +87,21 @@
 		max-width: 400px;
 	}
 
-	.laptop-disconts__wrapper {
+	.disconts__timer {
 		grid-row: 2 / 3;
 		max-height: 83px;
 	}
 
-	.laptop-disconts__list {
+	.timer__list {
 		gap: 20px;
 	}
 
-	.laptop-disconts__number {
+	.timer__count {
 		font-size: 40px;
 		justify-self: end;
 	}
 
-	.laptop-disconts__time {
+	.timer__units {
 		font-size: 20px;
 	}
 }
@@ -119,25 +118,25 @@
 		max-width: 302px;
 	}
 
-	.laptop-disconts__wrapper {
+	.disconts__timer {
 		grid-template-rows: 16px 39px;
 		gap: 10px;
 	}
 
-	.laptop-disconts__subtitle {
+	.timer__title {
 		font-size: 12px;
 	}
 	
-	.laptop-disconts__list {
+	.timer__list {
 		gap: 20px;
 	}
 
-	.laptop-disconts__number {
+	.timer__count {
 		font-size: 30px;
 		justify-self: end;
 	}
 
-	.laptop-disconts__time {
+	.timer__units {
 		font-size: 16px;
 	}
 }
@@ -158,25 +157,25 @@
 		align-self: start;
 	}
 
-	.laptop-disconts__wrapper {
+	.disconts__timer {
 		grid-template-rows: 10px 26px;
 		gap: 10px;
 	}
 
-	.laptop-disconts__subtitle {
+	.timer__title {
 		font-size: 8px;
 	}
 	
-	.laptop-disconts__list {
+	.timer__list {
 		gap: 8px;
 	}
 
-	.laptop-disconts__number {
+	.timer__count {
 		font-size: 20px;
 		justify-self: end;
 	}
 
-	.laptop-disconts__time {
+	.timer__units {
 		font-size: 12px;
 	}
 }
