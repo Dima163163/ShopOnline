@@ -130,7 +130,6 @@ const renderPagination = async (paginWrapper, numbOfPages, blogWrapper) => {
 const init = () => {
   rednerBlogs(blogInner, blogsCads, currentPage);
   renderPagination(paginationSection, blogsCads, blogInner);
-  renderPaginationArrow(paginationSection);
 };
 
 init();
