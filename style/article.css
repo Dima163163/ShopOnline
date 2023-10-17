@@ -1,0 +1,90 @@
+.article {
+  padding: 80px;
+}
+
+.article-conatainer {
+  margin: 0 auto;
+  max-width: 1770px;
+}
+
+.article-wrapper {
+  display: flex;
+  gap: 143px;
+}
+
+.article-title {
+  color: var(--black-grey, #2D2D2D);
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; 
+}
+
+.article-text {
+  color: var(--black-grey, #2D2D2D);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 150px;
+}
+
+.article-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article-btn {
+  color: var(--black-grey, #2D2D2D);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.article-author {
+  color: var(--black, #000);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.reclame-card {
+  width: 532px;
+  height: 328px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 43px 90px 43px 30px;
+}
+
+.reclame-card_one {
+  background-image: url('../img/stambul.png');
+  margin-bottom: 50px;
+}
+
+.reclame-card_two {
+  background-image: url('../img/car.png');
+}
+
+.reclame-card__title {
+  color: var(--white, #FFF);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.reclame-card__text {
+  color: var(--white, #FFF);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
