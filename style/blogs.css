@@ -58,12 +58,13 @@
 }
 
 .blogs-page__btn {
+  cursor: pointer;
   padding: 7px 13px;
   border-radius: 4px;
   border: 2px solid var(--black-grey, #2D2D2D)
 }
 
-.blogs-page__btn_one {
+.blogs-page__btn_active {
   border: 2px solid var(--blue-light, #3670C7)
 }
 
