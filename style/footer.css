@@ -1,0 +1,125 @@
+.footer {
+  background-color: var(--black-grey, #2D2D2D);
+  padding: 80px 0;
+}
+
+.footer-wrapper {
+  display: flex;
+}
+
+.footer-content-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 316px;
+  margin-right: 118px;
+}
+
+.footer__logo {
+  color: var(--white, #FFF);
+  font-family: 'Open' sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+
+.footer__logo-span {
+  color: var(--blue-light, #3670C7);
+}
+
+.footer-copyright {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--white, #FFF);
+}
+
+.footer-content-center {
+  display: flex;
+  max-width: 831px;
+  width: 100%;
+  margin-right: 181px;
+  gap: 98px;
+}
+
+.footer-content-center__catalog {
+  min-width: 480px;
+}
+
+.footer-title {
+  color: var(--white, #FFF);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 40px;
+}
+
+.footer-content-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 225px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-content-link,
+.footer-content-link-buyers {
+  color: var(--white, #FFF);
+  font-size: 22px;
+  line-height: 150%;
+}
+
+.footer-content-contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content-list-buyers {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-contact {
+  display: block;
+  color: var(--white, #FFF);
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+
+.footer-email {
+  margin-bottom: 36px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social-link {
+  display: block;
+  width: 26px;
+  height: 26px;
+}
+
+.footer-developer {
+  margin-bottom: 10px;
+}
+
+.footer-developer,
+.footer-developer-social {
+  color: var(--white, #FFF);
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+}

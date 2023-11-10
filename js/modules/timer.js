@@ -61,7 +61,7 @@ export const timer = (deadline, timerWrapper, selectorDayNumb, selectorDayUnit,
   const start = () => {
     const timer = getTimeRemaining();
 
-    if (timer.hours < 24) {
+    if (timer.hours < 24 && timer.day < 1) {
       timerBlockDayCount.textContent = addZero(timer.hours);
       timerBlockDayUnit.textContent =
       declencionNum(timer.hours, 'час', 'часа', 'часов');
