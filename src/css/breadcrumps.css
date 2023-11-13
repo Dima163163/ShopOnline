@@ -1,0 +1,20 @@
+.breadcrumps-wrapper {
+  margin-bottom: 80px;
+}
+
+.section-breadcrumbs {
+  display: flex;
+  gap: 10px;
+  align-content: center;
+}
+
+.section-breadcrumb {
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+}
+
+.section-arrow {
+  width: 18px;
+  height: 18px;
+}

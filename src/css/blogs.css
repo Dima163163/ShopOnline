@@ -1,5 +1,8 @@
+.section-blogs {
+  padding: 60px 0 151px;
+}
+
 .blogs {
-  padding: 80px 0 147px;
   background-color: var(--white, #FFF);
 }
 
@@ -11,20 +14,21 @@
 .blog-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 192px;
+  gap: 100px;
 }
 
 .blog-inner {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 50px 143px;
 }
 
 .blog-card {
   display: flex;
-  align-items: center;
   gap: 30px;
   cursor: pointer;
+  max-height: 195px;
 }
 .blog-card__id {
   display: none;
@@ -37,7 +41,8 @@
 }
 
 .blog-description {
-  max-width: 320px;
+  max-width: 420px;
+  padding-top: 13px;
   color: var(--black-grey, #2D2D2D);
   font-size: 38px;
   font-style: normal;

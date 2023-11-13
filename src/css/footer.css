@@ -1,6 +1,7 @@
 .footer {
   background-color: var(--black-grey, #2D2D2D);
   padding: 80px 0;
+  margin-top: auto;
 }
 
 .footer-wrapper {

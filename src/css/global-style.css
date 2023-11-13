@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -18,6 +19,11 @@ body {
 	font-weight: 400;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
 
 img, svg {
   max-width: 100%;
@@ -112,7 +118,8 @@ iframe {
 }
 
 .main {
-  padding: 45px 0 189px;
+  flex: 1 1 auto;
+  padding: 90px 0 189px;
 }
 
 @media (max-width: 1024px) {

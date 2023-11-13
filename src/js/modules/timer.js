@@ -93,3 +93,4 @@ export const timer = (deadline, timerWrapper, selectorDayNumb, selectorDayUnit,
 
   start();
 };
+

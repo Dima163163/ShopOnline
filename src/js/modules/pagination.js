@@ -1,13 +1,8 @@
-'use srtict';
+import elements from './pageElements.js';
+const {currentPage, blogsCads} = elements;
 
-const blogInner = document.querySelector('.blog-inner');
-const paginationSection = document.querySelector('.blogs-page__btns');
 
 const imgAPIS = ['https://loremflickr.com/400/400?1', 'https://loremflickr.com/400/400?2', 'https://loremflickr.com/400/400?3', 'https://loremflickr.com/400/400?4', 'https://loremflickr.com/400/400?5', 'https://loremflickr.com/400/400?6', 'https://loremflickr.com/400/400?7'];
-
-let currentPage = 1;
-const blogsCads = 4;
-
 
 // Функция для рандомного выбора картинок блогов
 const getRandomIntIncInclusive = (min, max) => {
@@ -27,7 +22,7 @@ const loadBlogs = async () => {
 };
 
 // Отрисовываем карточки blog
-const rednerBlogs = async (blogWrapper, pagesCount, currPage) => {
+export const rednerBlogs = async (blogWrapper, pagesCount, currPage) => {
   const data = await loadBlogs();
   blogWrapper.textContent = '';
   currPage--;
@@ -61,7 +56,7 @@ const renderPaginationBtn = (page, blogWrapper) => {
   }
 
   button.addEventListener('click', () => {
-    currentPage = page;
+    const currentPage = page;
     rednerBlogs(blogWrapper, blogsCads, currentPage);
     const currentBtn = document.querySelector('.blogs-page__btn_active');
     currentBtn.classList.remove('blogs-page__btn_active');
@@ -114,7 +109,8 @@ const renderPaginationArrow = (blogWrapper) => {
 };
 
 // Отрисовка пагинации
-const renderPagination = async (paginWrapper, numbOfPages, blogWrapper) => {
+export const renderPagination = async (paginWrapper,
+    numbOfPages, blogWrapper) => {
   const data = await loadBlogs();
   const pagesCount = Math.ceil(data.length / numbOfPages);
 
@@ -126,11 +122,3 @@ const renderPagination = async (paginWrapper, numbOfPages, blogWrapper) => {
   paginWrapper.prepend(arr.buttonLeft);
   paginWrapper.append(arr.buttonRight);
 };
-
-const init = () => {
-  rednerBlogs(blogInner, blogsCads, currentPage);
-  renderPagination(paginationSection, blogsCads, blogInner);
-};
-
-init();
-
