@@ -23,7 +23,7 @@
   height: 18px;
 }
 
-@media (max-width: 768px) {
+@include tablet {
   .breadcrumps-wrapper {
     margin-bottom: 60px;
   }
@@ -31,7 +31,8 @@
     font-size: 14px;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .section-breadcrumbs {
     gap: 6px;
   }

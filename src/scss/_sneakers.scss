@@ -8,12 +8,13 @@
   border-radius: 16px;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .sneakers {
     padding: 10px;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .sneakers {
     padding: 5px;
     border-radius: 8px;

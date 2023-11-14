@@ -26,7 +26,7 @@
   align-self: end;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .watch {
     padding: 58px 25px 20px 14px;
   }
@@ -34,7 +34,7 @@
     font-size: 24px;
   }
 }
-@media (max-width: 768px) {
+@include tablet {
   .watch {
     padding: 15px 10px 10px 5px;
   }
@@ -42,7 +42,7 @@
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
+@include mobile {
   .watch {
     padding: 28px 5px 5px 10px;
     border-radius: 8px;

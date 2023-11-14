@@ -139,7 +139,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .footer-wrapper-top {
     display: flex;
     flex-direction: column;
@@ -157,7 +157,8 @@
     gap: 75px;
   }
 }
-@media (max-width: 768px) {
+
+@include tablet {
   .footer {
     padding: 40px 0;
   }
@@ -214,7 +215,8 @@
     max-width: 616px;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .footer-wrapper-top {
     gap: 27px;
     margin-bottom: 60px;

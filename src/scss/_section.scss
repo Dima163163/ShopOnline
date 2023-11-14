@@ -6,7 +6,7 @@
   margin-bottom: 100px;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .section-container {
     display: grid;
     grid-template-columns: 217px 217px 217px 217px;
@@ -15,7 +15,8 @@
     margin-bottom: 90px;
   }
 }
-@media (max-width: 768px) {
+
+@include tablet {
   .section-container {
     display: grid;
     grid-template-columns: 140px 140px 220px 140px;
@@ -24,7 +25,8 @@
     margin-bottom: 60px;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .section-container {
     display: grid;
     grid-template-columns: 130px 130px;

@@ -72,7 +72,7 @@
   font-size: 32px;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .laptop-disconts {
     grid-column: 1/5;
     grid-row: 1/2;
@@ -100,7 +100,7 @@
     font-size: 20px;
   }
 }
-@media (max-width: 768px) {
+@include tablet {
   .laptop-disconts {
     padding: 64px 80px 33px;
     grid-template-rows: repeat(2, auto);
@@ -128,7 +128,8 @@
     font-size: 16px;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .laptop-disconts {
     background-image: url("../img/laptop320.png");
     grid-column: 1/3;

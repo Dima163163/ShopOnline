@@ -7,19 +7,21 @@
   background-size: cover;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .balloons {
     grid-column: 4/5;
     grid-row: 5/6;
   }
 }
-@media (max-width: 768px) {
+
+@include tablet {
   .balloons {
     grid-row: 7/8;
     background-image: url("../img/balls-768.png");
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .balloons {
     grid-column: 2/3;
     grid-row: 8/9;

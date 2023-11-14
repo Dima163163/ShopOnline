@@ -1032,7 +1032,7 @@ iframe {
     font-size: 16px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .watch {
     padding: 28px 5px 5px 10px;
     border-radius: 8px;

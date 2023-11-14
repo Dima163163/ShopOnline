@@ -79,7 +79,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .section-blogs {
     padding: 40px 0 101px;
   }
@@ -109,7 +109,7 @@
     padding-top: 5px;
   }
 }
-@media (max-width: 768px) {
+@include tablet {
   .section-blogs {
     padding: 35px 0 83px;
   }
@@ -141,7 +141,7 @@
     height: 20px;
   }
 }
-@media (max-width: 320px) {
+@include mobile {
   .section-blogs {
     padding: 16px 0 53px;
   }

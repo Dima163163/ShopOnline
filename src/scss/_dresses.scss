@@ -10,7 +10,7 @@
   justify-content: end;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .dresses {
     padding: 10px;
     grid-column: 3/4;
@@ -20,12 +20,14 @@
     background: url("../img/dres1024.png");
   }
 }
-@media (max-width: 768px) {
+
+@include tablet {
   .dresses {
     grid-row: 5/8;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .dresses {
     border-radius: 8px;
     background-image: url("../img/dec320.png");

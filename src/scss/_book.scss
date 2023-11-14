@@ -28,7 +28,7 @@
   line-height: 130%;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .book {
     padding: 20px 18px 20px 9px;
   }
@@ -39,7 +39,7 @@
     font-size: 30px;
   }
 }
-@media (max-width: 768px) {
+@include tablet {
   .book {
     padding: 48px 4px 15px 10px;
   }
@@ -50,7 +50,7 @@
     font-size: 26px;
   }
 }
-@media (max-width: 320px) {
+@include mobile {
   .book {
     padding: 76px 55px 10px 10px;
     border-radius: 8px;

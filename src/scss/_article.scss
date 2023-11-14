@@ -98,7 +98,7 @@
   line-height: 130%;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .article {
     padding: 40px 0 100px;
   }
@@ -148,7 +148,7 @@
     font-size: 14px;
   }
 }
-@media (max-width: 768px) {
+@include tablet {
   .article {
     padding: 35px 0 80px;
   }
@@ -179,7 +179,7 @@
     width: 320px;
   }
 }
-@media (max-width: 320px) {
+@include mobile {
   .article {
     padding: 16px 0 52px;
   }

@@ -26,7 +26,7 @@
   font-size: 56px;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .sneakers-green {
     grid-row: 2/4;
     grid-column: 3/5;
@@ -40,7 +40,8 @@
     font-size: 40px;
   }
 }
-@media (max-width: 768px) {
+
+@include tablet {
   .sneakers-green {
     grid-row: 2/5;
     grid-column: 3/5;
@@ -55,7 +56,8 @@
     font-size: 26px;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .sneakers-green {
     grid-row: 4/5;
     grid-column: 1/3;

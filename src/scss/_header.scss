@@ -118,7 +118,7 @@
   font-weight: 700;
 }
 
-@media (max-width: 1024px) {
+@include laptop {
   .header-container {
     padding: 34px 0 0px;
   }
@@ -151,7 +151,8 @@
     gap: 60px;
   }
 }
-@media (max-width: 768px) {
+
+@include tablet {
   .header-container {
     padding: 27px 0 0;
   }
@@ -174,7 +175,8 @@
     max-width: 540px;
   }
 }
-@media (max-width: 320px) {
+
+@include mobile {
   .header-container {
     padding: 20px 0;
   }
