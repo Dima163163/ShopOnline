@@ -70,37 +70,73 @@ const renderPaginationBtn = (page, blogWrapper) => {
 const renderPaginationArrow = (blogWrapper) => {
   const buttonLeft = document.createElement('btn');
   buttonLeft.classList.add('arrow', 'arrow-left');
-  buttonLeft.innerHTML = `
-  <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_0_255)">
-  <path d="M32.375 16.9583H10.5296L16.0487 
-  11.4237L13.875 9.25L4.625 18.5L13.875 
-  27.75L16.0487 25.5763L10.5296 20.0417H32.375V16.9583Z" fill="#8F8F8F"/>
-  </g>
-  <defs>
-  <clip-path id="clip0_0_255">
-  <rect width="37" height="37" fill="white"/>
-  </clip-path>
-  </defs>
-  </svg>
-  `;
+  if (window.innerWidth > 768) {
+    buttonLeft.style = `
+    content: '';
+    background-image: url('../src/img/left-arrow-blog.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 37px;
+    height: 37px;`;
+  } else {
+    buttonLeft.style = `
+    content: '';
+    background-image: url('../src/img/left768-320.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;`;
+  }
+  
+  // buttonLeft.innerHTML = `
+  // <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+  // <g clip-path="url(#clip0_0_255)">
+  // <path d="M32.375 16.9583H10.5296L16.0487 
+  // 11.4237L13.875 9.25L4.625 18.5L13.875 
+  // 27.75L16.0487 25.5763L10.5296 20.0417H32.375V16.9583Z" fill="#8F8F8F"/>
+  // </g>
+  // <defs>
+  // <clip-path id="clip0_0_255">
+  // <rect width="37" height="37" fill="white"/>
+  // </clip-path>
+  // </defs>
+  // </svg>
+  // `;
 
   const buttonRight = document.createElement('btn');
   buttonRight.classList.add('arrow', 'arrow-right');
-  buttonRight.innerHTML = `
-  <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <g clip-path="url(#clip0_0_258)">
-  <path d="M4.625 16.9583H26.4704L20.9513 11.4237L23.125 
-  9.25L32.375 18.5L23.125 27.75L20.9513 
-  25.5763L26.4704 20.0417H4.625V16.9583Z" fill="#3670C7"/>
-  </g>
-  <defs>
-  <clip-path id="clip0_0_258">
-  <rect width="37" height="37" fill="white" transform="matrix(-1 0 0 1 37 0)"/>
-  </clip-path>
-  </defs>
-  </svg>
-  `;
+  if (window.innerWidth > 768) {
+    buttonRight.style = `
+    content: '';
+    background-image: url('../src/img/right-arrow-blog.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 37px;
+    height: 37px;`;
+  } else {
+    buttonRight.style = `
+    content: '';
+    background-image: url('../src/img/right768-320.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 28px;
+    height: 28px;`;
+  }
+
+  // buttonRight.innerHTML = `
+  // <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+  // <g clip-path="url(#clip0_0_258)">
+  // <path d="M4.625 16.9583H26.4704L20.9513 11.4237L23.125 
+  // 9.25L32.375 18.5L23.125 27.75L20.9513 
+  // 25.5763L26.4704 20.0417H4.625V16.9583Z" fill="#3670C7"/>
+  // </g>
+  // <defs>
+  // <clip-path id="clip0_0_258">
+  // <rect width="37" height="37" fill="white" transform="matrix(-1 0 0 1 37 0)"/>
+  // </clip-path>
+  // </defs>
+  // </svg>
+  // `;
 
   return {
     buttonLeft,

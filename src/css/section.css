@@ -12,6 +12,7 @@
 		grid-template-columns: 217px 217px 217px 217px;
 		grid-template-rows: 314px 217px 217px 217px 217px 418px;
 		gap: 24px;
+		margin-bottom: 90px;
 	}
 }
 
@@ -21,6 +22,7 @@
 		grid-template-columns: 140px 140px 220px 140px;
 		grid-template-rows: 280px 140px 140px 60px 60px 60px 60px 337px;
 		gap: 20px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -31,5 +33,6 @@
 		grid-template-columns: 130px 130px;
 		grid-template-rows: 340px 130px 118px 280px 118px 118px 130px 130px 123px;
 		gap: 20px;
+		margin-bottom: 70px;
 	}
 }

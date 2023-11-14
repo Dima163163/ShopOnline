@@ -17,7 +17,8 @@
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; 
+  line-height: 130%;
+  margin-bottom: 40px;
 }
 
 .article-text {
@@ -43,6 +44,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.article-btn-img {
+  background-image: url('../img/back-btn.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
 }
 
 .article-author {
@@ -87,4 +96,148 @@
   font-style: normal;
   font-weight: 700;
   line-height: 130%;
+}
+
+@media (max-width: 1024px) {
+  .article {
+    padding: 40px 0 100px;
+  }
+
+  .breadcrumps-wrapper-article {
+    margin-bottom: 60px;
+  }
+
+  .article-conatainer {
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 42px;
+  }
+
+  .article-wrapper {
+    gap: 35px;
+  }
+
+  .reclame-card {
+    width: 300px;
+    height: 254px;
+  }
+
+  .article-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .article-text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .reclame-card {
+    padding: 15px 20px 20px 15px;
+  }
+
+  .reclame-card_one {
+    background-image: url('../img/stamb1024-768.png');
+    margin-bottom: 40px;
+  }
+
+.reclame-card_two {
+    background-image: url('../img/car1024-768.png');
+  }
+
+  .reclame-card__title {
+    font-size: 22px;
+  }
+
+  .reclame-card__text {
+    font-size: 14px;
+  }
+
+  .article-author {
+    font-size: 18px;
+  }
+
+  .article-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .article {
+    padding: 35px 0 80px;
+  }
+
+  .article-conatainer {
+    margin: 0 auto;
+    max-width: 768px;
+    padding: 0 34px;
+  }
+
+  .breadcrumps-wrapper-article {
+    margin-bottom: 50px;
+  }
+
+  .article-wrapper {
+    flex-direction: column;
+  }
+
+  .article-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .article-text {
+    font-size: 16px;
+    margin-bottom: 126px;
+  }
+
+  .reclame {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reclame-card {
+    width: 320px;
+  }
+}
+
+@media (max-width: 320px) {
+  .article {
+    padding: 16px 0 52px;
+  }
+
+
+  .article-conatainer {
+    margin: 0 auto;
+    max-width: 320px;
+    padding: 0 20px;
+  }
+
+  .article-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .article-text {
+    font-size: 12px;
+    margin-bottom: 123px;
+  }
+
+  .article-btn {
+    font-size: 10px;
+  }
+
+  .article-author {
+    font-size: 12px;
+  }
+
+  .article-btn-img {
+    background-image: url('../img/back-btn320.svg');
+    width: 16px;
+    height: 16px;
+  }
+
+  .reclame {
+    display: none;
+  }
 }
