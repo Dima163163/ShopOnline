@@ -22,7 +22,7 @@
   gap: 20px;
 }
 
-.sale-link-top{
+.sale-link-top {
   position: relative;
 }
 
@@ -77,7 +77,6 @@
     font-size: 40px;
     margin-bottom: 40px;
   }
-
   .section-sale-list {
     gap: 50px 20px;
   }
@@ -86,61 +85,49 @@
     height: 295px;
   }
 }
-
 @media (max-width: 768px) {
   .section-sale-title {
     font-size: 30px;
     margin-bottom: 30px;
   }
-
   .section-sale-list {
     gap: 40px 20px;
   }
-  
   .sale-link-img {
     width: 220px;
     height: 216px;
   }
-
   .sale-new-price {
     font-size: 22px;
   }
-
   .sale-price-wrapper {
     gap: 16px;
   }
-
   .sale-old-price {
     font-size: 16px;
   }
-
   .sale-link-description {
     font-size: 18px;
   }
 }
-
 @media (max-width: 320px) {
   .section-sale-title {
     font-size: 20px;
     margin-bottom: 26px;
   }
-
   .section-sale-list {
     gap: 30px 20px;
   }
-
   .sale-link-img {
     width: 130px;
     height: 130px;
   }
-
   .sale-new-price {
     font-size: 16px;
   }
   .sale-old-price {
     font-size: 12px;
   }
-
   .sale-link-description {
     font-size: 12px;
   }

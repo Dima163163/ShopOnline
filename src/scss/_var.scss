@@ -1,0 +1,20 @@
+$black-grey: #2D2D2D;
+$black: #000;
+$blue-light: #3670C7;
+$white: #FFF;
+$white-grey: #EFEFEF;
+$orange: #FFBD13;
+$sea: #38C0EB;
+$red: #F91155;
+
+$font: Lato;
+
+@mixin font($name, $weight) {
+  font: {
+    family: $name;
+    weight: $weight;
+    display: swap;
+  }
+  src: url('../src/fonts/#{ $name }-#{ $weight }.woff2') format('woff2'),
+  url('../src/fonts/#{ $name }-#{ $weight }.woff') format('woff')
+}

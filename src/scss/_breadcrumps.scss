@@ -15,40 +15,35 @@
 }
 
 .section-arrow {
-  content: '';
-  background-image: url('../img/blog-arrow.svg');
+  content: "";
+  background-image: url("../img/blog-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 18px;
   height: 18px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .breadcrumps-wrapper {
     margin-bottom: 60px;
   }
-
-	.section-breadcrumb {
-		font-size: 14px;
-	}
+  .section-breadcrumb {
+    font-size: 14px;
+  }
 }
-
-@media (max-width: 320px){
+@media (max-width: 320px) {
   .section-breadcrumbs {
     gap: 6px;
   }
-
   .breadcrumps-wrapper {
     margin-bottom: 31px;
   }
-
-	.section-breadcrumb {
-		font-size: 8px;
-	}
-
+  .section-breadcrumb {
+    font-size: 8px;
+  }
   .section-arrow {
-    content: '';
-    background-image: url('../img/blog-arrow320.svg');
+    content: "";
+    background-image: url("../img/blog-arrow320.svg");
     background-repeat: no-repeat;
     width: 11px;
     height: 11px;

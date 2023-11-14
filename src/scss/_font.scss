@@ -1,0 +1,40 @@
+@font-face {
+  @include font(Lato, 300);
+}
+
+@font-face {
+  @include font(Lato, 400);
+}
+
+@font-face {
+  @include font(Lato, 700);
+}
+
+@font-face {
+  @include font(OpenSans, 700);
+}
+
+// @font-face {
+//   font-family: "Open Sans";
+//   src: url("../fonts/open-sans/open-sans.woff") format("woff"), url("../fonts/open-sans/open-sans.woff2") format("woff2");
+//   font-weight: 700;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "Lato";
+//   src: local("Lato"), local("Lato-Light"), url("../fonts/lato-light.woff2") format("woff2"), url("../fonts/lato-light.woff") format("woff");
+//   font-weight: 300;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "Lato";
+//   src: local("Lato Bold"), local("Lato-Bold"), url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+//   font-weight: 700;
+//   font-display: swap;
+// }
+// @font-face {
+//   font-family: "Lato";
+//   src: local("Lato Regular"), local("Lato-Regular"), url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+//   font-weight: 400;
+//   font-display: swap;
+// }

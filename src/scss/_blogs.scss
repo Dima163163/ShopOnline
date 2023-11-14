@@ -3,7 +3,7 @@
 }
 
 .blogs {
-  background-color: var(--white, #FFF);
+  background-color: $white;
 }
 
 .blog-container {
@@ -30,6 +30,7 @@
   cursor: pointer;
   max-height: 195px;
 }
+
 .blog-card__id {
   display: none;
 }
@@ -43,7 +44,7 @@
 .blog-description {
   max-width: 420px;
   padding-top: 13px;
-  color: var(--black-grey, #2D2D2D);
+  color: $black-grey;
   font-size: 38px;
   font-style: normal;
   font-weight: 700;
@@ -67,11 +68,11 @@
   cursor: pointer;
   padding: 7px 13px;
   border-radius: 4px;
-  border: 2px solid var(--black-grey, #2D2D2D)
+  border: 2px solid $black-grey;
 }
 
 .blogs-page__btn_active {
-  border: 2px solid var(--blue-light, #3670C7)
+  border: 2px solid $blue-light;
 }
 
 .arrow {
@@ -82,31 +83,25 @@
   .section-blogs {
     padding: 40px 0 101px;
   }
-
   .blog-container {
     max-width: 1024px;
     padding: 0 42px;
   }
-
-  .blog-wrapper  {
+  .blog-wrapper {
     gap: 80px;
   }
-
   .blog-inner {
     gap: 30px 20px;
   }
-
   .blog-card {
     max-width: 460px;
     max-height: 140px;
     overflow: hidden;
   }
-
   .blog-img {
     width: 140px;
     height: 140px;
   }
-
   .blog-description {
     font-size: 30px;
     line-height: 120%;
@@ -114,37 +109,30 @@
     padding-top: 5px;
   }
 }
-
 @media (max-width: 768px) {
   .section-blogs {
-		padding: 35px 0 83px;
-	}
-
+    padding: 35px 0 83px;
+  }
   .blog-container {
     max-width: 768px;
     padding: 0 34px;
   }
-
-  .blog-inner  {
+  .blog-inner {
     flex-direction: column;
     gap: 20px;
   }
-
-  .blog-wrapper  {
+  .blog-wrapper {
     gap: 55px;
   }
   .blog-card {
     max-width: 100%;
   }
-
   .blog-description {
     max-width: 460px;
   }
-
   .blogs-page__btns {
     gap: 15px;
   }
-  
   .blogs-page__btn {
     padding: 1px 3px;
     text-align: center;
@@ -153,34 +141,28 @@
     height: 20px;
   }
 }
-
 @media (max-width: 320px) {
   .section-blogs {
-		padding: 16px 0 53px;
-	}
-
+    padding: 16px 0 53px;
+  }
   .blog-container {
     max-width: 320px;
     padding: 0 20px;
   }
-
-  .blog-inner  {
+  .blog-inner {
     flex-direction: column;
     gap: 10px;
   }
-
-  .blog-wrapper  {
+  .blog-wrapper {
     gap: 46px;
   }
   .blog-card {
     max-width: 100%;
   }
-
   .blog-img {
     width: 60px;
     height: 60px;
   }
-
   .blog-description {
     padding-top: 0;
     max-width: 213px;

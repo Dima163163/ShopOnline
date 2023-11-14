@@ -1,0 +1,66 @@
+.book {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image: url("../img/book.png");
+  background-repeat: no-repeat;
+  padding: 20px 20px;
+  display: grid;
+  align-items: end;
+  background-size: cover;
+  border-radius: 16px;
+}
+
+.book__text {
+  color: $white;
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.book__span {
+  color: $white;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+@media (max-width: 1024px) {
+  .book {
+    padding: 20px 18px 20px 9px;
+  }
+  .book__text {
+    font-size: 24px;
+  }
+  .book__span {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .book {
+    padding: 48px 4px 15px 10px;
+  }
+  .book__text {
+    font-size: 20px;
+  }
+  .book__span {
+    font-size: 26px;
+  }
+}
+@media (max-width: 320px) {
+  .book {
+    padding: 76px 55px 10px 10px;
+    border-radius: 8px;
+  }
+  .book__text {
+    font-size: 12px;
+    line-height: 110%;
+  }
+  .book__span {
+    line-height: 110%;
+    font-size: 16px;
+  }
+}
