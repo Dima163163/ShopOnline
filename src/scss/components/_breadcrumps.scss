@@ -1,0 +1,52 @@
+.breadcrumps-wrapper {
+  margin-bottom: 80px;
+}
+
+.section-breadcrumbs {
+  display: flex;
+  gap: 10px;
+  align-content: center;
+}
+
+.section-breadcrumb {
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 700;
+}
+
+.section-arrow {
+  content: "";
+  background-image: url("./img/blog-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 18px;
+}
+
+@include tablet {
+  .breadcrumps-wrapper {
+    margin-bottom: 60px;
+  }
+  .section-breadcrumb {
+    font-size: 14px;
+  }
+}
+
+@include mobile {
+  .section-breadcrumbs {
+    gap: 6px;
+  }
+  .breadcrumps-wrapper {
+    margin-bottom: 31px;
+  }
+  .section-breadcrumb {
+    font-size: 8px;
+  }
+  .section-arrow {
+    content: "";
+    background-image: url("./img/blog-arrow320.svg");
+    background-repeat: no-repeat;
+    width: 11px;
+    height: 11px;
+  }
+}

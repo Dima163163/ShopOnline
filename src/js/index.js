@@ -2,7 +2,9 @@ import {timer} from './modules/timer.js';
 import {createTimer} from './modules/createTimer.js';
 import elements from './modules/pageElements.js';
 import {rednerBlogs, renderPagination} from './modules/pagination.js';
-const {blogInner, paginationSection, currentPage, blogsCads} = elements;
+import {menuControl} from './modules/openMenu.js';
+const {blogInner, paginationSection, currentPage, blogsCads,
+  menuBtn, menuImgBtn, menuBurger} = elements;
 
 
 const timerWrapper = document.querySelector('.disconts-timer');
@@ -23,6 +25,7 @@ const init = () => {
     rednerBlogs(blogInner, blogsCads, currentPage);
     renderPagination(paginationSection, blogsCads, blogInner);
   }
+  menuControl(menuBtn, menuImgBtn, menuBurger);
 };
 
 init();

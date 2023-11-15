@@ -1,0 +1,254 @@
+.header-container {
+  padding: 27px 0 0;
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr;
+  align-items: center;
+  gap: 99px;
+  padding-top: 3px;
+}
+
+.header__logo {
+  padding-top: 13px;
+  grid-column: 1/2;
+  color: $black-grey;
+  font-family: "Open", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+
+.header__logo-span {
+  color: $blue-light;
+}
+
+.header__btn {
+  max-height: 61px;
+  justify-self: end;
+  align-items: center;
+  width: 151px;
+  display: grid;
+  grid-column: 2/3;
+  border-radius: 10px;
+  background: $blue-light;
+  padding: 9px 28px 9px 30px;
+  gap: 7px;
+  color: $white;
+  font-family: Lato;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.header__btn-icon {
+  grid-column: 1/2;
+  background-image: url('./img/menu.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.header__btn-icon.is-close {
+  background-image: url('./img/close.svg');
+}
+
+.header__btn-text {
+  grid-column: 2/3;
+}
+
+.header__form {
+  grid-column: 3/4;
+}
+
+.header__label {
+  display: block;
+  position: relative;
+  max-height: 54px;
+  width: 757px;
+}
+
+.header__input {
+  appearance: none;
+  border-radius: 30px;
+  background: $white-grey;
+  padding: 15px 40px;
+  max-height: 54px;
+  min-width: 100%;
+  border: none;
+}
+
+.header__input-btn {
+  background-image: url("./img/search.svg");
+  background-color: $blue-light;
+  background-position: center;
+  max-width: 101px;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header-panel {
+  grid-column: 4/5;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+  align-items: center;
+}
+
+.header-panel__item {
+  justify-items: center;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.header-panel__icon {
+  grid-row: 1/3;
+  width: 36px;
+  height: 36px;
+}
+
+.header-panel__text {
+  grid-row: 3/4;
+  color: $black-grey;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@include laptop {
+  .header-container {
+    padding: 34px 0 0px;
+  }
+  .header__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 34px 89px;
+  }
+  .header__logo {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .header__btn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    width: 151px;
+    max-height: 54px;
+  }
+  .header__form {
+    grid-column: 2/5;
+    grid-row: 2/3;
+  }
+  .header__label {
+    max-width: 700px;
+  }
+  .header-panel {
+    grid-column: 4/5;
+    grid-row: 1/2;
+    max-width: 354px;
+    gap: 60px;
+  }
+}
+
+@include tablet {
+  .header-container {
+    padding: 27px 0 0;
+  }
+  .header__wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 29px 45px;
+  }
+  .header__btn {
+    font-size: 16px;
+    padding: 7px 21px 10px 21px;
+    max-height: 42px;
+    max-width: 115px;
+  }
+  .header__label {
+    max-width: 540px;
+  }
+  .header__input {
+    max-height: 54px;
+    max-width: 540px;
+  }
+}
+
+@include mobile {
+  .header-container {
+    padding: 20px 0;
+  }
+  .header__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 71px;
+  }
+  .header__logo {
+    font-size: 18px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .header__btn-icon {
+    width: 14px;
+    height: 14px;
+  }
+  .header__btn {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    max-width: 79px;
+    max-height: 30px;
+    font-size: 12px;
+    padding: 5px 14px;
+  }
+  .header__form {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  .header__label {
+    max-width: 280px;
+  }
+  .header__input {
+    padding: 9px 16px 11px 16px;
+    max-height: 30px;
+    max-width: 280px;
+    font-size: 8px;
+  }
+  .header__input-btn {
+    max-height: 30px;
+    max-width: 50px;
+    background-size: 20px;
+  }
+  .header-panel__item {
+    gap: 0px;
+    grid-template-rows: 1fr;
+  }
+  .header-panel {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 130px;
+    gap: 20px;
+  }
+  .header-panel__text {
+    display: none;
+  }
+  .header-panel__icon {
+    min-width: 30px;
+    min-height: 30px;
+  }
+  .header__btn-icon {
+    background-image: url('./img/menu320.svg');
+    width: 14px;
+    height: 14px;
+  }
+}

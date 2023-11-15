@@ -1,0 +1,27 @@
+@mixin font($name, $weight) {
+  font: {
+    family: $name;
+    weight: $weight;
+    display: swap;
+  }
+  src: url('../fonts/#{ $name }-#{ $weight }.woff2') format('woff2'),
+  url('../fonts/#{ $name }-#{ $weight }.woff') format('woff')
+};
+
+@mixin laptop() {
+  @media (max-width: $breakpoint__xl) {
+    @content;
+  }
+};
+
+@mixin tablet() {
+  @media (max-width: $breakpoint__md) {
+    @content;
+  }
+};
+
+@mixin mobile() {
+  @media (max-width: $breakpoint__sm) {
+    @content;
+  }
+};

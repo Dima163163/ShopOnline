@@ -1,0 +1,53 @@
+.watch {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url("./img/time.webp");
+  background-repeat: no-repeat;
+  padding: 78px 25px 20px 14px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-radius: 16px;
+  background-size: cover;
+}
+
+.watch__text {
+  color: $white;
+  font-family: Lato;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  grid-row: 1/2;
+}
+
+.watch__sale {
+  grid-row: 2/3;
+  justify-self: end;
+  align-self: end;
+}
+
+@include laptop {
+  .watch {
+    padding: 58px 25px 20px 14px;
+  }
+  .watch__text {
+    font-size: 24px;
+  }
+}
+@include tablet {
+  .watch {
+    padding: 15px 10px 10px 5px;
+  }
+  .watch__text {
+    font-size: 16px;
+  }
+}
+@include mobile {
+  .watch {
+    padding: 28px 5px 5px 10px;
+    border-radius: 8px;
+  }
+  .watch__text {
+    font-size: 12px;
+  }
+}
