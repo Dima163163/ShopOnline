@@ -72,6 +72,17 @@
   font-style: normal;
 }
 
+@include desktop {
+  .section-sale-list {
+    gap: 20px 20px;
+    justify-content: space-between;
+  }
+  .sale-link-img {
+    width: 350px;
+    height: 350px;
+  }
+}
+
 @include laptop {
   .section-sale-title {
     font-size: 40px;

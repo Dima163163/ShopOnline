@@ -8,6 +8,11 @@
   url('../fonts/#{ $name }-#{ $weight }.woff') format('woff')
 };
 
+@mixin desktop() {
+  @media (max-width: $breakpoint__xxl) {
+    @content;
+  }
+};
 @mixin laptop() {
   @media (max-width: $breakpoint__xl) {
     @content;

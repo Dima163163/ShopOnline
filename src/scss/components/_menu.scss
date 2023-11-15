@@ -2,8 +2,9 @@
   background-color: $white;
   position: absolute;
   padding: 52px 0 92px;
-  width: 100vw;
-  transform: translateY(-600px);
+  width: 100%;
+  transform: translateY(-700px);
+  z-index: 10;
 }
 
 .menu.is-visible {
@@ -51,9 +52,27 @@
 
 @keyframes animationMenu {
   0% {
-    transform: translateY(-600px)
+    transform: translateY(-700px)
   }
   100% {
     transform: translateY(0px)
   }
+}
+
+@include laptop {
+  .menu {
+    transform: translateY(-1400px);
+  }
+
+  .menu-wrapper {
+    flex-wrap: wrap;
+  }
+  @keyframes animationMenu {
+  0% {
+    transform: translateY(-1400px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+}
 }
