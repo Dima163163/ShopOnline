@@ -47,7 +47,7 @@
 
 .header__btn-icon {
   grid-column: 1/2;
-  background-image: url('./img/menu.svg');
+  background-image: url('./../img/menu.svg');
   background-position: center;
   background-repeat: no-repeat;
   width: 24px;
@@ -55,7 +55,7 @@
 }
 
 .header__btn-icon.is-close {
-  background-image: url('./img/close.svg');
+  background-image: url('./../img/close.svg');
 }
 
 .header__btn-text {
@@ -84,7 +84,7 @@
 }
 
 .header__input-btn {
-  background-image: url("./img/search.svg");
+  background-image: url("./../img/search.svg");
   background-color: $blue-light;
   background-position: center;
   max-width: 101px;
@@ -247,7 +247,7 @@
     min-height: 30px;
   }
   .header__btn-icon {
-    background-image: url('./img/menu320.svg');
+    background-image: url('./../img/menu320.svg');
     width: 14px;
     height: 14px;
   }

@@ -16,7 +16,7 @@
 
 .section-arrow {
   content: "";
-  background-image: url("./img/blog-arrow.svg");
+  background-image: url("./../img/blog-arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 18px;
@@ -44,7 +44,7 @@
   }
   .section-arrow {
     content: "";
-    background-image: url("./img/blog-arrow320.svg");
+    background-image: url("./../img/blog-arrow320.svg");
     background-repeat: no-repeat;
     width: 11px;
     height: 11px;
