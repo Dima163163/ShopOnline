@@ -138,7 +138,7 @@ iframe {
 
 @include tablet {
   .container {
-    max-width: 100%;
+    max-width: 768px;
     padding: 0 34px;
   }
   .main {
@@ -156,7 +156,7 @@ iframe {
 
 @include mobile {
   .container {
-    max-width: 100%;
+    max-width: 320px;
     padding: 0 20px;
   }
   .main {
