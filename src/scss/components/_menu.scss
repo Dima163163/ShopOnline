@@ -96,6 +96,7 @@
 
 @include tablet {
   .menu {
+    max-width: 100%;
     transform: translateY(-1800px);
   }
   .menu-wrapper {
