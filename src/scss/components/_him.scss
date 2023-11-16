@@ -25,6 +25,19 @@
   line-height: 130%;
 }
 
+@include desktop {
+  .him {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    padding: 10px 19px 14px 14px;
+    align-items: end;
+    gap: 39px;
+  }
+  .him__text {
+    font-size: 20px;
+  }
+}
+
 @include laptop {
   .him {
     grid-column: 4/5;

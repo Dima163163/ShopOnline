@@ -31,7 +31,7 @@
 
 .footer__logo {
   color: $white;
-  font-family: "Open" sans-serif;
+  font-family: "Open", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -137,6 +137,25 @@
   font-size: 16px;
   line-height: 130%;
   font-weight: 700;
+}
+
+@include desktop {
+  .footer-wrapper-top {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .footer-content-list {
+    flex-wrap: nowrap;
+  }
+  .footer-content-center__catalog {
+    min-height: 537px;
+    width: 225px;
+    margin-right: 75px;
+  }
+  .footer-content-wrapper {
+    gap: 75px;
+  }
 }
 
 @include laptop {

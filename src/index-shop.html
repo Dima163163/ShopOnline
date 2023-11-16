@@ -3,10 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preload" href="fonts/Lato-300.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/Lato-400.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/Lato-700.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="fonts/OpenSans-700.woff2" as="font" type="font/woff2" crossorigin>
 	<!-- <link rel="stylesheet" href="css/index.css"> -->
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
@@ -16,11 +12,18 @@
 				link.href = url;
 				document.head.append(link);
 			}
+			const createScript = url => {
+				const script = document.createElement('script');
+				script.type = 'module';
+				script.src = url;
+				document.head.append(script)
+			}
 			createLink('css/index.css');
+			createScript('js/index.js')
 		})
 	</script>
 	<title>Shop-Online</title>
-	<script type="module" src="js/index.js"></script>
+	<!-- <script type="module" src="js/index.js"></script> -->
 </head>
 <body>
 	<div class="wrapper">
@@ -145,7 +148,8 @@
 		</header>
 		<main class="main">
 			<div class="container">
-				<ul class="section-container section-products">
+				<div class="section-goods">
+					<ul class="section-container section-products">
 					<li class="laptop-disconts" tabindex="0">
 						<picture class="laptop-disconts-image-wrapper">
 							<source media="(max-width: 1024px)" srcset="img/laptop1024.webp" type="image/webp">
@@ -211,14 +215,15 @@
 					<li class="balloons" tabindex="0">
 						<h1 class="visually-hidden">Новогодние игрушки</h1>
 					</li>
-				</ul>
+					</ul>
+				</div>
 				<div class="section-sale">
 					<h2 class="section-sale-title">Это выгодно!</h2>
 					<ul class="section-sale-list">
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/singlet.png" alt="футболки">
+									<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
 									<p class=" sale sale-link-sale">-50%</p>
 								</div>
 								<div class="sale-link-content">
@@ -231,9 +236,9 @@
 							</a>
 						</li>
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/sneakers-sale.png" alt="кросовки">
+									<img class="sale-link-img" src="img/sneakers-sale.webp" alt="кросовки">
 									<p class=" sale sale-link-sale">-40%</p>
 								</div>
 								<div class="sale-link-content">
@@ -246,9 +251,9 @@
 							</a>
 						</li>
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/bed-sheets.png" alt="постельное белье">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
 									<p class=" sale sale-link-sale">-10%</p>
 								</div>
 								<div class="sale-link-content">
@@ -261,9 +266,9 @@
 							</a>
 						</li>
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/hair-dryer.png" alt="фен">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
 									<p class=" sale sale-link-sale">-30%</p>
 								</div>
 								<div class="sale-link-content">
@@ -276,9 +281,9 @@
 							</a>
 						</li>
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/bed-sheets.png" alt="постельное белье">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
 									<p class=" sale sale-link-sale">-10%</p>
 								</div>
 								<div class="sale-link-content">
@@ -291,9 +296,9 @@
 							</a>
 						</li>
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/hair-dryer.png" alt="фен">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
 									<p class=" sale sale-link-sale">-30%</p>
 								</div>
 								<div class="sale-link-content">
@@ -306,9 +311,9 @@
 							</a>
 						</li>
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/mittens.png" alt="варежки">
+									<img class="sale-link-img" src="img/mittens.webp" alt="варежки">
 									<p class=" sale sale-link-sale">-30%</p>
 								</div>
 								<div class="sale-link-content">
@@ -321,9 +326,9 @@
 							</a>
 						</li>
 						<li class="section-sale-item">
-							<a href="" class="section-sale-link">
+							<a href="./" class="section-sale-link">
 								<div class="sale-link-top">
-									<img class="sale-link-img" src="img/singlet.png" alt="футболки">
+									<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
 									<p class=" sale sale-link-sale">-50%</p>
 								</div>
 								<div class="sale-link-content">

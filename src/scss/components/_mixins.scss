@@ -9,10 +9,11 @@
 };
 
 @mixin desktop() {
-  @media (max-width: $breakpoint__xxl) {
+  @media (max-width: $breakpoint__xxl) and (min-width: $breakpoint__xl) {
     @content;
   }
 };
+
 @mixin laptop() {
   @media (max-width: $breakpoint__xl) {
     @content;

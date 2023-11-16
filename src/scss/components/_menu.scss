@@ -2,6 +2,7 @@
   background-color: $white;
   position: absolute;
   padding: 52px 0 92px;
+  max-width: 1800px;
   width: 100%;
   transform: translateY(-700px);
   z-index: 10;
@@ -59,17 +60,33 @@
   }
 }
 
-@include laptop {
+@include desktop {
+  .menu-wrapper {
+    flex-wrap: wrap;
+  }
   .menu {
     transform: translateY(-1400px);
   }
+  @keyframes animationMenu {
+  0% {
+      transform: translateY(-1400px)
+    }
+    100% {
+      transform: translateY(0px)
+    }
+  }
+}
 
+@include laptop {
+  .menu {
+    transform: translateY(-1600px);
+  }
   .menu-wrapper {
     flex-wrap: wrap;
   }
   @keyframes animationMenu {
   0% {
-    transform: translateY(-1400px)
+    transform: translateY(-1600px)
   }
   100% {
     transform: translateY(0px)

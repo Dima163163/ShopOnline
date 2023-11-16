@@ -119,6 +119,13 @@ iframe {
   padding: 90px 0 189px;
 }
 
+@include desktop  {
+  .container {
+    max-width: 100%;
+    padding: 0 42px;
+  }
+}
+
 @include laptop {
   .container {
     max-width: 1024px;

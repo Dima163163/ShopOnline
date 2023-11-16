@@ -8,6 +8,7 @@
   align-items: end;
   border-radius: 16px;
   background-size: cover;
+  background-position: top;
 }
 
 .sneakers-green__text {
@@ -24,6 +25,21 @@
 
 .sneakers-green__span {
   font-size: 56px;
+}
+
+@include desktop {
+  .sneakers-green {
+    grid-row: 2/4;
+    grid-column: 3/5;
+    padding: 22px;
+  }
+  .sneakers-green__text {
+    font-size: 30px;
+    border-radius: 20px;
+  }
+  .sneakers-green__span {
+    font-size: 40px;
+  }
 }
 
 @include laptop {

@@ -21,6 +21,13 @@
   }
 }
 
+@include desktop {
+  .dresses {
+    grid-column: 3/4;
+    grid-row: 4/6;
+  }
+}
+
 @include tablet {
   .dresses {
     grid-row: 5/8;

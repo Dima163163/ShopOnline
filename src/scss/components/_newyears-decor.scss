@@ -24,6 +24,18 @@
   max-width: 643px;
 }
 
+@include desktop {
+  .newyears-decor {
+    grid-column: 1/5;
+    grid-row: 6/7;
+  }
+  .newyears-decor__text {
+    font-size: 30px;
+    padding: 39px 30px;
+    max-width: 513px;
+  }
+}
+
 @include laptop {
   .newyears-decor {
     grid-column: 1/5;
