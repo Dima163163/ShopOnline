@@ -181,7 +181,7 @@
 
 @include mobile {
   .laptop-disconts {
-    background-image: url("./../img/laptop320.webp");
+    // background-image: url("./../img/laptop320.webp");
     grid-column: 1/3;
     padding: 50px 29px 30px;
     grid-template-rows: repeat(2, auto);

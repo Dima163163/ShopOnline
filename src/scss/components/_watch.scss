@@ -26,6 +26,15 @@
   align-self: end;
 }
 
+@include desktop {
+  .watch {
+    padding: 58px 25px 20px 14px;
+  }
+  .watch__text {
+    font-size: 24px;
+  }
+}
+
 @include laptop {
   .watch {
     padding: 58px 25px 20px 14px;
