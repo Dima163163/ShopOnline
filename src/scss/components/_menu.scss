@@ -85,11 +85,42 @@
     flex-wrap: wrap;
   }
   @keyframes animationMenu {
-  0% {
-    transform: translateY(-1600px)
-  }
-  100% {
-    transform: translateY(0px)
+    0% {
+      transform: translateY(-1600px)
+    }
+    100% {
+      transform: translateY(0px)
+    }
   }
 }
+
+@include tablet {
+  .menu {
+    transform: translateY(-1800px);
+  }
+  .menu-wrapper {
+    gap: 20px;
+  }
+  .menu-list {
+    max-height: 510px;
+    flex-wrap: nowrap;
+  }
+  .menu-item,
+  .menu-link {
+    width: 100%;
+  }
+  .menu-title {
+    font-size: 30px;
+  }
+  .menu-link {
+    font-size: 18px;
+  }
+  @keyframes animationMenu {
+    0% {
+      transform: translateY(-1800px)
+    }
+    100% {
+      transform: translateY(0px)
+    }
+  }
 }
