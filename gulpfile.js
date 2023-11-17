@@ -16,7 +16,8 @@ import gulpWebp from 'gulp-webp';
 import gulpAvif from 'gulp-avif';
 import {stream as critical} from 'critical';
 import gulpif from 'gulp-if';
-// import rename from 'gulp-rename';
+import autoprefixer from 'gulp-autoprefixer';
+import rename from 'gulp-rename';
 
 
 const prepros = true;
@@ -28,9 +29,7 @@ const sass = gulpSass(sassPkg);
 const webpackConf = {
   mode: dev ? 'development' : 'production',
   devtool: dev ? 'eval-source-map' : false,
-  optimization: {
-    minimize: false,
-  },
+  optimization: dev ? {minimize: true} : {minimize: false},
   output: {
     filename: 'index.js',
   },
@@ -62,6 +61,7 @@ export const style = () => {
         .src('src/scss/**/*.scss')
         .pipe(gulpif(dev, sourcemaps.init()))
         .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer())
         .pipe(cleanCss({
           2: {
             specialComments: 0,
@@ -77,6 +77,7 @@ export const style = () => {
       .pipe(gulpCssImport({
         extensions: ['css'],
       }))
+      .pipe(autoprefixer())
       .pipe(cleanCss({
         2: {
           specialComments: 0,
@@ -95,11 +96,11 @@ export const js = () => gulp
     .pipe(webpackStream(webpackConf, webpack))
     .pipe(gulpif(!dev, gulp.dest('dist/js')))
     .pipe(gulpif(!dev, terser()))
-    // .pipe(
-    //     rename({
-    //       suffix: '.min',
-    //     }),
-    // )
+    .pipe(
+        rename({
+          suffix: '.min',
+        }),
+    )
     .pipe(gulpif(dev, sourcemaps.write('../maps')))
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.stream());

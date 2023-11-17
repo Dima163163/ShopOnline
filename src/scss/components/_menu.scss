@@ -61,6 +61,9 @@
 }
 
 @include desktop {
+  .menu {
+    max-width: 96%;
+  }
   .menu-wrapper {
     flex-wrap: wrap;
   }
@@ -79,6 +82,8 @@
 
 @include laptop {
   .menu {
+    max-width: 90%;
+    min-width: 1024px;
     transform: translateY(-1600px);
   }
   .menu-wrapper {
@@ -95,11 +100,15 @@
 }
 
 @include tablet {
+  .menu-catalog {
+    min-width: 220px;
+  }
   .menu {
-    max-width: 100%;
+    max-width: 94%;
     transform: translateY(-1800px);
   }
   .menu-wrapper {
+    flex-direction: column;
     gap: 20px;
   }
   .menu-list {
@@ -123,5 +132,12 @@
     100% {
       transform: translateY(0px)
     }
+  }
+}
+
+@include mobile {
+  .menu {
+    max-width: 70%;
+    min-width: 320px;
   }
 }
