@@ -13,17 +13,11 @@
 .header__logo {
   padding-top: 13px;
   grid-column: 1/2;
-  color: $black-grey;
-  font-family: "Open", sans-serif;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 1.8px;
 }
 
-.header__logo-span {
-  color: $blue-light;
+.header__logo-svg {
+  width: 190px;
+  height: 41px;
 }
 
 .header__btn {
@@ -223,9 +217,12 @@
     gap: 20px 71px;
   }
   .header__logo {
-    font-size: 26px;
     grid-column: 1/3;
     grid-row: 1/2;
+  }
+  .header__logo-svg {
+    width: 165px;
+    height: 35px;
   }
   .header__btn-icon {
     width: 14px;
@@ -315,6 +312,10 @@
     font-size: 18px;
     grid-column: 1/3;
     grid-row: 1/2;
+  }
+  .header__logo-svg {
+    width: 114px;
+    height: 25px;
   }
   .header__btn-icon {
     width: 14px;
