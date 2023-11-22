@@ -152,6 +152,7 @@
 }
 @include tablet {
   .laptop-disconts {
+    grid-column: 1/5;
     padding: 64px 80px 33px;
     grid-template-rows: repeat(2, auto);
   }

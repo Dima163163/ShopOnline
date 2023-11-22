@@ -26,7 +26,6 @@
 	<!-- <script type="module" src="js/index.js"></script> -->
 </head>
 <body>
-	<div class="wrapper">
 		<header class="header">
 			<div class="container">
 				<div class="header-container">
@@ -38,29 +37,30 @@
 					</button>
 						<form class="header__form">
 							<label class="header__label" for="header__input">
-								<input class="header__input" id="header__input" type="text" placeholder="Я ищу">
+								<input class="header__input" id="header__input" type="text" placeholder="Я ищу...">
 								<button class="header__input-btn" aria-label="Кнопка поиска"></button>
 							</label>
 						</form>
 					<ul class="header-panel">
 						<li class="header-panel__item" tabindex="0">
-							<div class="header-icon header-icon-profile"></div>
+              <div class="header-icon header-icon-profile"></div>
 							<p class="header-panel__text">
 								Профиль
 							</p>
 						</li>
 						<li class="header-panel__item" tabindex="0">
-							<div class="header-icon header-icon-basket"></div>
+              <div class="header-icon header-icon-basket"></div>
 							<p class="header-panel__text">Корзина</p>
 						</li>
 						<li class="header-panel__item" tabindex="0">
-							<div class="header-icon header-icon-favorites"></div>
+              <div class="header-icon header-icon-favorites"></div>
 							<p class="header-panel__text">Избранное</p>
 						</li>
 					</ul>
 					</div>
 				</div>
-				<div class="menu">
+			</div>
+      <div class="menu">
 					<div class="menu-wrapper">
 					<div class="menu-wrapper-content menu-catalog">
           <h2 class="menu-title">Каталог</h2>
@@ -123,7 +123,6 @@
 						</ul>
 					</div>
 					</div>
-				</div>
 			</div>
 		</header>
 		<main class="main">
@@ -335,7 +334,10 @@
 					<div class="footer-content-wrapper">
 						<div class="footer-content-center">
 						<div class="footer-content-center__wrapper footer-content-center__catalog">
-							<h2 class="footer-title">Каталог</h2>
+              <div class="footer-title-wrapper">
+                <h2 class="footer-title">Каталог</h2>
+                <button class="footer-title-btn"></button>
+              </div>
 							<ul class="footer-content-list">
 								<li class="footer-content-item">
 									<a href="#" class="footer-content-link">Смартфоны</a>
@@ -370,7 +372,10 @@
 							</ul>
 						</div>
 						<div class="footer-content-center__wrapper">
-							<h2 class="footer-title">Покупателям</h2>
+              <div class="footer-title-wrapper">
+                <h2 class="footer-title">Покупателям</h2>
+                <button class="footer-title-btn"></button>
+              </div>
 							<ul class="footer-content-list-buyers">
 								<li class="footer-content-item-buyers">
 									<a href="#" class="footer-content-link-buyers">Оплата заказа</a>
@@ -447,7 +452,6 @@
 					</div>
 				</div>
 			</div>
-		</footer>
-	</div>
+    </footer>
 </body>
 </html>

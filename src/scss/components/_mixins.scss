@@ -15,19 +15,21 @@
 };
 
 @mixin laptop() {
-  @media (max-width: $breakpoint__xl) {
+  @media (max-width: $breakpoint__xm) and (min-width: $breakpoint__md) {
     @content;
   }
 };
 
 @mixin tablet() {
-  @media (max-width: $breakpoint__md) {
+  @media (max-width: $breakpoint__ml) and (min-width: $breakpoint__ls) {
     @content;
   }
 };
 
 @mixin mobile() {
-  @media (max-width: $breakpoint__md) and (min-width: $breakpoint__sm) {
+  @media (max-width: $breakpoint__ls) and (min-width: $breakpoint__sm) {
     @content;
   }
 };
+
+

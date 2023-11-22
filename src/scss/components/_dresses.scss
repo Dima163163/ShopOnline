@@ -13,8 +13,8 @@
 @include laptop {
   .dresses {
     padding: 10px;
-    grid-column: 3/4;
-    grid-row: 4/6;
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
     padding: 10px;
     align-content: end;
     background: url("./../img/dres1024.webp");
@@ -23,14 +23,16 @@
 
 @include desktop {
   .dresses {
-    grid-column: 3/4;
-    grid-row: 4/6;
+    grid-column: 3 / 4;
+    grid-row: 4 / 6;
   }
 }
 
 @include tablet {
   .dresses {
-    grid-row: 5/8;
+    align-items: end;
+    grid-column: 3 / 4;
+    grid-row: 5 / 8;
   }
 }
 
@@ -38,8 +40,8 @@
   .dresses {
     border-radius: 8px;
     background-image: url("./../img/dec320.webp");
-    grid-column: 1/2;
-    grid-row: 7/9;
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
     padding: 10px;
   }
 }

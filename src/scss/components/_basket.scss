@@ -1,0 +1,869 @@
+.section-basket {
+  margin-bottom: 100px;
+}
+
+.section-basket-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.basket-wrapper {
+  max-width: 1320px;
+  padding: 30px 40px;
+  border-radius: 16px;
+  background: $white;
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.25);
+  margin-bottom: 30px;
+}
+
+.basket-title-wrapper {
+  display: flex;
+}
+
+.basket-title{
+  display: inline-block;
+  font-size: 50px;
+  line-height: 130%;
+}
+
+.basket-wrapper-title {
+  margin-bottom: 20px;
+}
+
+.basket-label {
+  font-size: 16px;
+}
+
+.basket-wrapper-span {
+  font-size: 24px;
+}
+
+.basket-checkbox-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $grey-white;
+}
+
+.real-checkbox {
+  width: 0;
+  height: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.real-checkbox:focus + .custom-checkbox {
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.75);
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: $blue-light;
+  margin-right: 11px;
+  vertical-align: sub;
+}
+
+.custom-checkbox::before {
+  content: '';
+  display: inline-block;
+  background-image: url('./../img/checkboxOk.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 14px;
+  height: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in;
+}
+
+.real-checkbox:checked + .custom-checkbox::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.basket-btn-del,
+.good-card-basket-btn {
+  background-image: url('./../img/delete.svg');
+  background-repeat: no-repeat;
+  vertical-align: sub;
+  width: 30px;
+  height: 30px;
+}
+
+.good-card-basket-btn {
+  background-image: url('./../img/delete768.svg');
+  background-repeat: no-repeat;
+  vertical-align: sub;
+  display: none;
+  width: 24px;
+  height: 24px;
+  align-self: flex-end;
+}
+
+.basket-good-card {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.basket-good-card-image {
+  width: 170px;
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.custom-checkbox-good {
+  margin-right: 20px;
+}
+
+.basket-good-card-img {
+  width: 130px;
+  height: 130px;
+}
+
+.good-card-descr {
+  grid-column: 2/3;
+  width: 533px;
+  margin-right: 137px;
+}
+
+.good-card-title {
+  font-size: 22px;
+  line-height: 150%;
+  font-weight: 400;
+  color: $black-grey;
+  margin-bottom: 8px;
+}
+
+.good-card-text {
+  font-size: 16px;
+  line-height: 130%;
+  font-weight: 400;
+  color: $grey-black;
+}
+
+.good-card-count-wrapper {
+  margin-right: 137px;
+  grid-column: 3/4;
+  height: 36px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.good-card-count {
+  font-size: 22px;
+}
+
+.good-card-btn {
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 400;
+  border-radius: 50%;
+  border: 1px solid $grey-white;
+  background-color: $white;
+}
+
+.good-card-btn-dell {
+  color: $grey-black;
+}
+
+.good-card-price {
+  grid-column: 4/5;
+  max-width: 143px;
+}
+
+.good-card-price-new{
+  color: $black-grey;
+  text-align: right;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.good-card-price-old {
+  color: $grey-black;
+  text-align: right;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: line-through;
+  margin-bottom: 15px;
+}
+
+.good-card-price-credit {
+  color: $blue-light;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.delivery-wrapper-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 1320px;
+  padding: 30px 40px;
+  background: $white;
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.25);
+}
+
+.delivery-wrapper-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.delivery-btn-edit {
+  color: $blue-light;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.delivery-address-wrapper {
+  margin-bottom: 32px;
+}
+
+.delivery-address-inner,
+.delivery-price-inner {
+  display: flex;
+  max-width: 1042px;
+}
+
+.delivery-address-inner {
+  gap: 161px;
+  margin-bottom: 15px;
+}
+
+.delivery-price-inner {
+  gap: 113px;
+}
+
+.delivery-card-descr {
+  color: $grey-black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.delivery-card-text {
+  color: $black-grey;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%; 
+}
+
+.delivery-price-mobil {
+  display: none;
+}
+
+.delivery-crad-bottom {
+  display: flex;
+  gap: 155px;
+}
+
+.delivery-date {
+  color: $black-grey;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.delivery-good-image {
+  display: flex;
+  gap: 17px;
+}
+
+.delivery-good-img {
+  width: 80px;
+  height: 80px;
+}
+
+.total-wrapper {
+  max-height: 538px;
+  width: 420px;
+  background: $white;
+  border-radius: 16px;
+  box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.25);
+}
+
+.total-inner {
+  padding: 30px 40px 20px;
+}
+
+.total-inner-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.total-inner-center {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.total-inner-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-inner-text {
+  color: $black-grey;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.total-inner-grey-text {
+  color: $grey-black;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.total-inner-text-black {
+  color: $black-grey;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.total-inner-delivery-info-block {
+  margin-bottom: 10px;
+}
+
+.total-inner-text-black {
+  display: inline-block;
+}
+
+.total-inner-text-blue {
+  color: $blue-light;
+}
+
+.total-inner-delivery-info-time {
+  margin-bottom: 5px;
+}
+
+.total-inner-delivery-info-address {
+  margin-bottom: 20px;
+}
+
+.total-inner-delivery-date {
+  margin-bottom: 20px;
+}
+
+.total-inner-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.total-inner-btn {
+  border-radius: 10px;
+  background-color: $blue-light;
+  padding: 14px 100px;
+  color: $white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; 
+}
+
+.total-inner-conditions {
+  padding: 20px 10px 30px 43px;
+}
+
+.checkbox-conditions {
+  display: flex;
+  color: $grey-dark;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+.custom-checkbox-conditions-span {
+  color: $grey-black;
+}
+
+@include desktop {
+  .section-basket-wrapper {
+    flex-direction: column;
+  }
+  .basket-title {
+    font-size: 40px;
+  }
+  .basket-wrapper,
+  .delivery-wrapper-card {
+    padding: 30px;
+    max-width: 940px;
+  }
+  .basket-wrapper-span {
+    font-size: 24px;
+  }
+  .good-card-descr {
+    max-width: 370px;
+    margin-right: 40px;
+  }
+
+  .good-card-price {
+    min-width: 143px;
+  }
+  .delivery-wrapper-title {
+    margin-bottom: 34px;
+  }
+  .good-card-count-wrapper {
+    margin-right: 40px;
+  }
+}
+
+@include laptop() {
+  .section-basket-wrapper {
+    flex-direction: column;
+  }
+  .basket-title {
+    font-size: 40px;
+  }
+  .basket-wrapper,
+  .delivery-wrapper-card {
+    padding: 30px;
+    max-width: 940px;
+  }
+  .basket-wrapper-span {
+    font-size: 24px;
+  }
+  .good-card-descr {
+    width: 70%;
+    margin-right: 40px;
+  }
+
+  .good-card-price {
+    min-width: 143px;
+  }
+  .delivery-wrapper-title {
+    margin-bottom: 34px;
+  }
+  .good-card-count-wrapper {
+    margin-right: 40px;
+  }
+  .basket-good-card {
+    grid-template-columns: auto auto 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+@include tablet() {
+  .section-basket-wrapper {
+    flex-direction: column;
+  }
+  .container-basket {
+    width: 100%;
+    padding: 0;
+  }
+  .good-card-price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 473px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  
+  .basket-wrapper,
+  .delivery-wrapper-card,
+  .total-wrapper {
+    border-radius: 0;
+  }
+
+  .total-wrapper {
+    width: 100%;
+  }
+
+  .basket-title {
+    font-size: 28px;
+  }
+
+  .basket-wrapper-span {
+    font-size: 16px;
+  }
+
+  .basket-wrapper-title {
+    margin-bottom: 22px;
+  }
+
+  .basket-label{
+    font-size: 14px;
+  }
+  .good-card-title {
+    font-size: 18px;
+    margin-bottom: 6px;
+  }
+  .good-card-text {
+    font-size: 10px;
+  }
+  .good-card-basket-btn {
+    display: block;
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+  }
+  .good-card-price-new {
+    font-size: 22px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .good-card-price-old {
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .good-card-price-credit {
+    font-size: 12px;
+  }
+  .basket-good-card-image {
+    grid-row: 1 / 3;
+    position: relative;
+    width: 91px;
+    height: 91px;
+    margin-bottom: 16px;
+  }
+  .basket-good-card-img {
+    width: 91px;
+    height: 91px;
+  }
+  .good-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .basket-good-card {
+    width: 100%;
+    border-top: 1px solid $grey-white;
+    grid-template-columns: 105px auto 24px;
+    grid-template-rows: 30px 30px 47px 32px;
+    margin-bottom: 0;
+  }
+  .good-card-count-wrapper {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-right: 0;
+  }
+
+  .good-card-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .good-card-descr {
+    width: 100%;
+    margin-right: 0;
+  }
+  .good-card-count {
+    font-size: 18px;
+  } 
+  .basket-btn-del {
+    display: none;
+  }
+  .basket-checkbox-wrapper {
+    border-bottom: none;
+  }
+  .basket-wrapper {
+    margin-bottom: 20px;
+  }
+  .delivery-title {
+    display: none;
+  }
+  .delivery-card-descr {
+    display: none;
+  }
+  .delivery-address-wrapper {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid $grey-white;
+  }
+  .delivery-crad-bottom {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .total-inner-text {
+    font-size: 22px;
+  }
+  .total-inner-grey-text {
+    font-size: 12px;
+  }
+  .total-inner-delivery-info-block,
+  .total-inner-delivery-date,
+  .total-inner-delivery-pay {
+    display: flex;
+    justify-content: space-between;
+  }
+  .total-inner-text-black,
+  .total-inner-text-blue {
+    font-size: 12px;
+  }
+  .total-inner-btn-wrapper {
+    padding: 0 30px;
+  }
+  .total-inner-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+  .checkbox-conditions{
+    font-size: 12px;
+  }
+  .delivery-price {
+    display: none;
+  }
+  .delivery-price-mobil {
+    color: $grey-black;
+    display: block;
+  }
+  .total-inner-delivery-info-time {
+    margin-bottom: 10px;
+  }
+};
+
+@include mobile() {
+  .section-basket {
+    margin-bottom: 50px;
+  }
+  .section-basket-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container-basket {
+    width: 100%;
+    padding: 0;
+  }
+  .good-card-price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 9px 20px;
+    max-width: 473px;
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  
+  .basket-wrapper,
+  .delivery-wrapper-card,
+  .total-wrapper {
+    border-radius: 0;
+  }
+
+  .total-wrapper {
+    width: 100%;
+  }
+
+  .basket-title {
+    font-size: 28px;
+  }
+
+  .basket-wrapper-span {
+    font-size: 16px;
+  }
+
+  .basket-wrapper-title {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
+  .basket-wrapper-span {
+    font-size: 12px;
+  }
+
+  .basket-label{
+    font-size: 14px;
+  }
+  .good-card-title {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  .good-card-text {
+    display: none;
+  }
+  .good-card-basket-btn {
+    display: block;
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+  }
+  .good-card-price-new {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .good-card-price-old {
+    font-size: 10px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .good-card-price-credit {
+    font-size: 10px;
+  }
+  .basket-good-card-image {
+    grid-row: 1 / 4;
+    position: relative;
+    width: 91px;
+    height: 91px;
+    margin-bottom: 16px;
+  }
+  .basket-good-card-img {
+    width: 91px;
+    height: 91px;
+  }
+  .good-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .basket-good-card {
+    padding-top: 15px;
+    width: 100%;
+    border-top: 1px solid $grey-white;
+    grid-template-columns: 105px auto 24px;
+    grid-template-rows: auto auto auto auto;
+    margin-bottom: 15px;
+  }
+  .good-card-count-wrapper {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+    margin-right: 0;
+  }
+
+  .good-card-btn {
+    width: 28px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .good-card-descr {
+    grid-column: 2/4;
+    width: 100%;
+    margin-right: 0;
+  }
+  .good-card-count {
+    font-size: 18px;
+  } 
+  .basket-btn-del {
+    display: none;
+  }
+  .basket-checkbox-wrapper {
+    border-bottom: none;
+  }
+  .basket-wrapper {
+    padding: 15px 20px 10px;
+    margin-bottom: 20px;
+  }
+  .delivery-title {
+    display: none;
+  }
+  .delivery-card-descr {
+    display: none;
+  }
+  .delivery-address-wrapper {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $grey-white;
+  }
+  .delivery-crad-bottom {
+    gap: 15px;
+    flex-direction: column;
+  }
+  .total-inner-text {
+    font-size: 16px;
+  }
+  .total-inner-grey-text {
+    font-size: 10px;
+  }
+  .total-inner-delivery-info-block,
+  .total-inner-delivery-date,
+  .total-inner-delivery-pay {
+    display: flex;
+    justify-content: space-between;
+  }
+  .total-inner-text-black,
+  .total-inner-text-blue {
+    font-size: 12px;
+  }
+  .total-inner-btn-wrapper {
+    padding: 0 20px;
+  }
+  .total-inner-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+  .checkbox-conditions{
+    font-size: 10px;
+  }
+  .delivery-wrapper-card {
+    padding: 15px 20px 17px
+  }
+  .delivery-btn-edit {
+    font-size: 12px;
+  }
+  .delivery-card-text {
+    font-size: 10px;
+  }
+  .delivery-price {
+    display: none;
+  }
+  .delivery-price-mobil {
+    color: $grey-black;
+    display: block;
+  }
+  .delivery-good-img {
+    width: 60px;
+    height: 60px;
+  }
+  .delivery-date {
+    font-size: 12px;
+  }
+  .total-inner {
+    padding: 15px 20px 21px
+  }
+  .total-inner-center {
+    margin-bottom: 15px;
+  }
+  .total-inner-delivery-info-time {
+    margin-bottom: 10px;
+  }
+  .total-inner-delivery-info-address {
+    margin-bottom: 15px;
+  }
+  .total-inner-conditions {
+    padding: 20px
+  }
+
+  .custom-checkbox {
+    margin-right: 5px;
+  }
+  .custom-checkbox-conditions-text {
+    padding-top: 2px
+  }
+};

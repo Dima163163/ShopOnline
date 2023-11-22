@@ -1,7 +1,7 @@
 .menu {
   background-color: $white;
   position: absolute;
-  padding: 52px 0 92px;
+  padding: 52px 75px 92px;
   max-width: 1800px;
   width: 100%;
   transform: translateY(-700px);
@@ -62,7 +62,7 @@
 
 @include desktop {
   .menu {
-    max-width: 96%;
+    padding: 30 42px;
   }
   .menu-wrapper {
     flex-wrap: wrap;
@@ -82,8 +82,7 @@
 
 @include laptop {
   .menu {
-    max-width: 90%;
-    min-width: 1024px;
+    padding: 30 34px;
     transform: translateY(-1600px);
   }
   .menu-wrapper {
@@ -104,7 +103,7 @@
     min-width: 220px;
   }
   .menu {
-    max-width: 94%;
+    padding: 20 20px;
     transform: translateY(-1800px);
   }
   .menu-wrapper {
@@ -136,8 +135,38 @@
 }
 
 @include mobile {
+  .menu-catalog {
+    min-width: 220px;
+  }
   .menu {
-    max-width: 70%;
-    min-width: 320px;
+    max-width: 320px;
+    padding: 20 20px;
+    transform: translateY(-1800px);
+  }
+  .menu-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .menu-list {
+    max-height: 510px;
+    flex-wrap: nowrap;
+  }
+  .menu-item,
+  .menu-link {
+    width: 100%;
+  }
+  .menu-title {
+    font-size: 30px;
+  }
+  .menu-link {
+    font-size: 18px;
+  }
+  @keyframes animationMenu {
+    0% {
+      transform: translateY(-1800px)
+    }
+    100% {
+      transform: translateY(0px)
+    }
   }
 }

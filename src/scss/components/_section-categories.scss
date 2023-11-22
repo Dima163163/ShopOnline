@@ -1,0 +1,42 @@
+.main-categories {
+  padding: 90px 0 96px;
+}
+.categories-title {
+  color: $black-grey;
+  font-family: Lato;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  margin-bottom: 50px;
+}
+
+@include laptop {
+  .main-categories {
+    padding: 60px 0 88px;
+  }
+  .categories-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+@include tablet{
+  .main-categories {
+    padding: 50px 0 57px;
+  }
+  .categories-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@include mobile {
+  .main-categories {
+    padding: 40px 0 117px;
+  }
+  .categories-title {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}

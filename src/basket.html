@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preload" href="../fonts/lato-light.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="../fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="../fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="../fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="stylesheet" href="css/index.css">
-  <title>Article</title>
-  <script type="module" src="js/index.js"></script>
+	<script>
+	</script>
+	<title>Shop-Online</title>
+	<script type="module" src="js/index.js"></script>
 </head>
 <body>
-	<header class="header">
+
+		<header class="header">
 			<div class="container">
 				<div class="header-container">
 					<div class="header__wrapper">
@@ -23,7 +22,7 @@
 					</button>
 						<form class="header__form">
 							<label class="header__label" for="header__input">
-								<input class="header__input" id="header__input" type="text" placeholder="Я ищу">
+								<input class="header__input" id="header__input" type="text" placeholder="Я ищу...">
 								<button class="header__input-btn" aria-label="Кнопка поиска"></button>
 							</label>
 						</form>
@@ -110,58 +109,264 @@
 					</div>
 					</div>
 			</div>
-	</header>
-	<main class="article">
-    <div class="breadcrumps-wrapper breadcrumps-wrapper-article">
+		</header>
+    <main class="main main-good">
+      <div class="breadcrumps-wrapper breadcrumps-wrapper-article">
         <div class="container">
           <div class="section-breadcrumbs">
             <a href="./index-shop.html" class="section-breadcrumb">Главная</a>
             <div class="section-arrow"></div>
-            <a href="./index-shop.html" class="section-breadcrumb">Блог</a>
-            <div class="section-arrow"></div>
-            <p class="section-breadcrumb">Как ухаживать за обувью</p>
-          </div>
-        </div>
-    </div>
-    <div class="article-conatainer">
-      <div class="article-wrapper">
-        <div class="article-inner">
-          <h1 class="article-title">Как ухаживать за обувью из кожи</h1>
-          <p class="article-text">
-            Материала для обуви лучше натуральной кожи все ещё не придумали. Качественную кожу очень приятно носить, она идеально ложится по ноге, в нужных местах немного растягивается. В кожаной обуви, если она соответствует погоде, создаётся хороший микроклимат – ноги не мёрзнут, не потеют, и чувствуют себя очень комфортно. Неудивительно, что по статистике больше 60% покупателей выбирает обувь именно из гладкой натуральной кожи. Вдобавок кожа практична и не требует трудоёмкого ухода.
-          Но это совсем не означает, что можно раз в полгода протереть обувь тряпочкой и на этом остановиться. Так же, как кожа лица и тела, материал обуви нуждается в заботе. Регулярный уход надолго продлит срок службы любимой пары и сделает её аккуратной и сияющей, словно только что из магазина.
-          </p>
-          <div class="article-bottom">
-            <a href="./blog.html" class="article-btn">
-              <div class="article-btn-img"></div>
-              К списку статей
-            </a>
-            <p class="article-author">Инга Соловьева</p>
-          </div>
-        </div>
-        <div class="reclame">
-          <div class="reclame-card reclame-card_one">
-            <h3 class="reclame-card__title">
-              Горящие туры в Стамбул 
-              от 20 000 руб.
-            </h3>
-            <p class="reclame-card__text">
-              Окунись в настоящую восточную сказку
-            </p>
-          </div>
-          <div class="reclame-card reclame-card_two">
-            <h3 class="reclame-card__title">
-              Новый RENAULT DUSTER
-            </h3>
-            <p class="reclame-card__text">
-              Легендарный внедорожник в новом дизайне
-            </p>
+            <p class="section-breadcrumb">Корзина</p>
           </div>
         </div>
       </div>
-    </div>
-	</main>
-	<footer class="footer">
+      <div class="section-basket">
+      <div class="container container-basket">
+        <div class="section-basket-wrapper">
+          <div class="section-basket-inner">
+            <div class="basket-wrapper">
+              <div class="basket-title-wrapper">
+                <h2 class="basket-title basket-wrapper-title">Корзина</h2>
+                <span class="basket-wrapper-span">2</span>
+              </div>
+              <div class="basket-checkbox-wrapper">
+                <label class="basket-label">
+                  <input type="checkbox" name="checkbox" class="real-checkbox">
+                  <span class="custom-checkbox"></span>
+                  Выбрать все
+                </label>
+                <button class="basket-btn-del"></button>
+              </div>
+              <div class="basket-good-card">
+                <div class="basket-good-card-image">
+                  <label class="good-label">
+                    <input type="checkbox" name="checkbox-good" class="real-checkbox">
+                    <span class="custom-checkbox custom-checkbox-good"></span>
+                  </label>
+                  <img class="basket-good-card-img" src="img/basket-notebook.png" alt="товар">
+                </div>
+                <div class="good-card-descr">
+                  <h3 class="good-card-title">15.6" Игровой ноутбук ASUS G513IE-HN004T</h3>
+                  <p class="good-card-text">Цвет: черный</p>
+                  <p class="good-card-text">Оперативная память: 16 ГБ</p>
+                </div>
+                <div class="good-card-count-wrapper">
+                  <button class="good-card-btn good-card-btn-dell">−</button>
+                  <p class="good-card-count">1</p>
+                  <button class="good-card-btn good-card-btn-add">+</button>
+                </div>
+                <div class="good-card-price">
+                  <p class="good-card-price-new">109 090 ₽</p>
+                  <p class="good-card-price-old">140 590 ₽</p>
+                  <a href="#" class="good-card-price-credit">В кредит от 5600 ₽</a>
+                </div>
+                <button class="good-card-basket-btn"></button>
+              </div>
+              <div class="basket-good-card">
+                <div class="basket-good-card-image">
+                  <label class="good-label">
+                    <input type="checkbox" name="checkbox-good" class="real-checkbox">
+                    <span class="custom-checkbox custom-checkbox-good"></span>
+                  </label>
+                  <img class="basket-good-card-img" src="img/basket-notebook.png" alt="товар">
+                </div>
+                <div class="good-card-descr">
+                  <h3 class="good-card-title">15.6" Игровой ноутбук ASUS G513IE-HN004T</h3>
+                  <p class="good-card-text">Цвет: черный</p>
+                  <p class="good-card-text">Оперативная память: 16 ГБ</p>
+                </div>
+                <div class="good-card-count-wrapper">
+                  <button class="good-card-btn good-card-btn-dell">−</button>
+                  <p class="good-card-count">1</p>
+                  <button class="good-card-btn good-card-btn-add">+</button>
+                </div>
+                <div class="good-card-price">
+                  <p class="good-card-price-new">109 090 ₽</p>
+                  <p class="good-card-price-old">140 590 ₽</p>
+                  <a href="#" class="good-card-price-credit">В кредит от 5600 ₽</a>
+                </div>
+                <button class="good-card-basket-btn"></button>
+              </div>
+            </div>
+            <div class="delivery-wrapper-card">
+              <div class="delivery-wrapper-title">
+                <h2 class="basket-title delivery-title">Способ доставки</h2>
+                <button class="delivery-btn-edit">Изменить</button>
+              </div>
+              <div class="delivery-address-wrapper">
+                <div class="delivery-address-inner">
+                  <p class="delivery-card-descr delivery-address-descr">Пункт выдачи</p>
+                  <p class="delivery-card-text delivery-address-naming">г. Москва (Московская область), улица Павлика Морозова, д. 48, (Пункт выдачи), Ежедневно 10:00-21:00</p>
+                </div>
+                <div class="delivery-price-inner">
+                  <p class="delivery-card-descr delivery-price-descr">Стоимость доставки</p>
+                  <p class="delivery-card-text delivery-price-mobil">Бесплатная доставка</p>
+                  <p class="delivery-card-text delivery-price">Бесплатно</p>
+                </div>
+              </div>
+              <div class="delivery-crad-bottom">
+                <p class="delivery-date">1-13 февраля</p>
+                <div class="delivery-good-image">
+                  <img class="delivery-good-img" src="img/delivery-notebook.png" alt="ноутбук">
+                  <img class="delivery-good-img" src="img/clothes.png" alt="постельное белье">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="total-wrapper">
+            <div class="total-inner">
+              <div class="total-inner-top">
+                <p class="total-inner-text">Итого:</p>
+                <p class="total-inner-text total-inner-price">112 992 ₽</p>
+              </div>
+              <div class="total-inner-center">
+                <div class="total-inner-item total-inner-count">
+                  <p class="total-inner-grey-text total-inner-count-text">Товары, 2  шт.</p>
+                  <p class="total-inner-grey-text total-inner-count-sum">145 080 ₽</p>
+                </div>
+                <div class="total-inner-item total-inner-discount">
+                  <p class="total-inner-grey-text total-inner-discount-text">Скидка</p>
+                  <p class="total-inner-grey-text total-inner-discount-sum">32 088 ₽</p>
+                </div>
+                <div class="total-inner-item total-inner-delivery">
+                  <p class="total-inner-grey-text total-inner-delivery-text">Доставка</p>
+                  <p class="total-inner-grey-text total-inner-delivery-sum">Бесплатно</p>
+                </div>
+              </div>
+              <div class="total-inner-delivery-info">
+                <div class="total-inner-delivery-info-block">
+                  <p class="total-inner-text-black total-inner-delivery-info-text">Доставка:</p>
+                  <span class="total-inner-text-blue total-inner-delivery-info-span"> Пункт выдачи</span>
+                </div>
+                <p class="total-inner-grey-text total-inner-delivery-info-time">Ежедневно 10:00 - 21:00</p>
+                <p class="total-inner-grey-text total-inner-delivery-info-address">г. Москва (Московская область), улица Павлика Морозова, д. 48</p>
+              </div>
+              <div class="total-inner-delivery-date">
+                <p class="total-inner-text-black total-inner-delivery-date-text">Дата: </p>
+                <span class="total-inner-text-blue total-inner-delivery-date-span">10-13 февраля</span>
+              </div>
+              <div class="total-inner-delivery-pay">
+                <p class="total-inner-text-black total-inner-delivery-pay-text">Оплата: </p>
+                <span class="total-inner-text-blue total-inner-delivery-pay-span">Картой</span>
+              </div>
+            </div>
+            <div class="total-inner-btn-wrapper">
+              <button class="total-inner-btn">Заказать</button>
+            </div>
+            <div class="total-inner-conditions">
+              <label class="checkbox-conditions">
+                <input type="checkbox" name="checkbox-conditions" class="real-checkbox">
+                  <span class="custom-checkbox custom-checkbox-conditions"></span>
+                  <div class="custom-checkbox-conditions-text">
+                    Согласен с условиями
+                    <span class="custom-checkbox-conditions-span">правил пользования торговой площадкой и правилами возврата
+                    </span>
+                  </div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+        <div class="section-sale section-sale-basket">
+          <div class="container">
+            <h2 class="section-sale-title section-sale-title-good">Это выгодно!</h2>
+            <ul class="section-sale-list">
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
+									<p class="sale sale-link-sale">-50%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">1299 ₽</p>
+										<p class="sale-price sale-old-price">2598 ₽</p>
+									</div>
+									<p class="sale-link-description">Пара футболок</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/sneakers-sale.webp" alt="кросовки">
+									<p class=" sale sale-link-sale">-40%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2099 ₽</p>
+										<p class="sale-price sale-old-price">5938 ₽</p>
+									</div>
+									<p class="sale-link-description">Кросовки</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
+									<p class=" sale sale-link-sale">-10%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">3902 ₽</p>
+										<p class="sale-price sale-old-price">4490 ₽</p>
+									</div>
+									<p class="sale-link-description">Постельное белье</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2999 ₽</p>
+										<p class="sale-price sale-old-price">6030 ₽</p>
+									</div>
+									<p class="sale-link-description">Фен</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
+									<p class=" sale sale-link-sale">-10%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">3902 ₽</p>
+										<p class="sale-price sale-old-price">4490 ₽</p>
+									</div>
+									<p class="sale-link-description">Постельное белье</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2999 ₽</p>
+										<p class="sale-price sale-old-price">6030 ₽</p>
+									</div>
+									<p class="sale-link-description">Фен</p>
+								</div>
+							</a>
+						</li>
+            </ul>
+          </div>
+        </div>
+    </main>
+    <footer class="footer">
 			<div class="container">
 				<div class="footer-wrapper">
 					<div class="footer-wrapper-top">
@@ -290,5 +495,6 @@
 				</div>
 			</div>
     </footer>
+
 </body>
 </html>

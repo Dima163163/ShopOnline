@@ -1,18 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preload" href="../fonts/lato-light.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="../fonts/lato-bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="../fonts/lato-regular.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="preload" href="../fonts/OpenSans-Bold.woff2" as="font" type="font/woff2" crossorigin>
-	<link rel="stylesheet" href="css/index.css">
-  <title>Article</title>
-  <script type="module" src="js/index.js"></script>
+	<!-- <link rel="stylesheet" href="css/index.css"> -->
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const createLink = url => {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.href = url;
+				document.head.append(link);
+			}
+			const createScript = url => {
+				const script = document.createElement('script');
+				script.type = 'module';
+				script.src = url;
+				document.head.append(script)
+			}
+			createLink('css/index.css');
+			createScript('js/index.js' ? 'js/index.js' : 'js/index.min.js')
+		})
+	</script>
+	<title>Shop-Online</title>
+	<!-- <script type="module" src="js/index.js"></script> -->
 </head>
 <body>
-	<header class="header">
+		<header class="header">
 			<div class="container">
 				<div class="header-container">
 					<div class="header__wrapper">
@@ -23,7 +37,7 @@
 					</button>
 						<form class="header__form">
 							<label class="header__label" for="header__input">
-								<input class="header__input" id="header__input" type="text" placeholder="Я ищу">
+								<input class="header__input" id="header__input" type="text" placeholder="Я ищу...">
 								<button class="header__input-btn" aria-label="Кнопка поиска"></button>
 							</label>
 						</form>
@@ -110,58 +124,257 @@
 					</div>
 					</div>
 			</div>
-	</header>
-	<main class="article">
-    <div class="breadcrumps-wrapper breadcrumps-wrapper-article">
-        <div class="container">
-          <div class="section-breadcrumbs">
-            <a href="./index-shop.html" class="section-breadcrumb">Главная</a>
-            <div class="section-arrow"></div>
-            <a href="./index-shop.html" class="section-breadcrumb">Блог</a>
-            <div class="section-arrow"></div>
-            <p class="section-breadcrumb">Как ухаживать за обувью</p>
-          </div>
-        </div>
-    </div>
-    <div class="article-conatainer">
-      <div class="article-wrapper">
-        <div class="article-inner">
-          <h1 class="article-title">Как ухаживать за обувью из кожи</h1>
-          <p class="article-text">
-            Материала для обуви лучше натуральной кожи все ещё не придумали. Качественную кожу очень приятно носить, она идеально ложится по ноге, в нужных местах немного растягивается. В кожаной обуви, если она соответствует погоде, создаётся хороший микроклимат – ноги не мёрзнут, не потеют, и чувствуют себя очень комфортно. Неудивительно, что по статистике больше 60% покупателей выбирает обувь именно из гладкой натуральной кожи. Вдобавок кожа практична и не требует трудоёмкого ухода.
-          Но это совсем не означает, что можно раз в полгода протереть обувь тряпочкой и на этом остановиться. Так же, как кожа лица и тела, материал обуви нуждается в заботе. Регулярный уход надолго продлит срок службы любимой пары и сделает её аккуратной и сияющей, словно только что из магазина.
-          </p>
-          <div class="article-bottom">
-            <a href="./blog.html" class="article-btn">
-              <div class="article-btn-img"></div>
-              К списку статей
-            </a>
-            <p class="article-author">Инга Соловьева</p>
-          </div>
-        </div>
-        <div class="reclame">
-          <div class="reclame-card reclame-card_one">
-            <h3 class="reclame-card__title">
-              Горящие туры в Стамбул 
-              от 20 000 руб.
-            </h3>
-            <p class="reclame-card__text">
-              Окунись в настоящую восточную сказку
-            </p>
-          </div>
-          <div class="reclame-card reclame-card_two">
-            <h3 class="reclame-card__title">
-              Новый RENAULT DUSTER
-            </h3>
-            <p class="reclame-card__text">
-              Легендарный внедорожник в новом дизайне
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-	</main>
-	<footer class="footer">
+		</header>
+		<main class="main main-categories">
+			<div class="container">
+				<div class="section-categories">
+          <h2 class="categories-title">Электроника</h2>
+          <ul class="section-sale-list">
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
+									<p class=" sale sale-link-sale">-50%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">1299 ₽</p>
+										<p class="sale-price sale-old-price">2598 ₽</p>
+									</div>
+									<p class="sale-link-description">Пара футболок</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/sneakers-sale.webp" alt="кросовки">
+									<p class=" sale sale-link-sale">-40%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2099 ₽</p>
+										<p class="sale-price sale-old-price">5938 ₽</p>
+									</div>
+									<p class="sale-link-description">Кросовки</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
+									<p class=" sale sale-link-sale">-10%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">3902 ₽</p>
+										<p class="sale-price sale-old-price">4490 ₽</p>
+									</div>
+									<p class="sale-link-description">Постельное белье</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2999 ₽</p>
+										<p class="sale-price sale-old-price">6030 ₽</p>
+									</div>
+									<p class="sale-link-description">Фен</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
+									<p class=" sale sale-link-sale">-10%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">3902 ₽</p>
+										<p class="sale-price sale-old-price">4490 ₽</p>
+									</div>
+									<p class="sale-link-description">Постельное белье</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2999 ₽</p>
+										<p class="sale-price sale-old-price">6030 ₽</p>
+									</div>
+									<p class="sale-link-description">Фен</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/mittens.webp" alt="варежки">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">540 ₽</p>
+										<p class="sale-price sale-old-price">890 ₽</p>
+									</div>
+									<p class="sale-link-description">Варежки-мишки</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
+									<p class=" sale sale-link-sale">-50%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">1299 ₽</p>
+										<p class="sale-price sale-old-price">2598 ₽</p>
+									</div>
+									<p class="sale-link-description">Пара футболок</p>
+								</div>
+							</a>
+						</li>
+            <li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
+									<p class=" sale sale-link-sale">-50%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">1299 ₽</p>
+										<p class="sale-price sale-old-price">2598 ₽</p>
+									</div>
+									<p class="sale-link-description">Пара футболок</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/sneakers-sale.webp" alt="кросовки">
+									<p class=" sale sale-link-sale">-40%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2099 ₽</p>
+										<p class="sale-price sale-old-price">5938 ₽</p>
+									</div>
+									<p class="sale-link-description">Кросовки</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
+									<p class=" sale sale-link-sale">-10%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">3902 ₽</p>
+										<p class="sale-price sale-old-price">4490 ₽</p>
+									</div>
+									<p class="sale-link-description">Постельное белье</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2999 ₽</p>
+										<p class="sale-price sale-old-price">6030 ₽</p>
+									</div>
+									<p class="sale-link-description">Фен</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
+									<p class=" sale sale-link-sale">-10%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">3902 ₽</p>
+										<p class="sale-price sale-old-price">4490 ₽</p>
+									</div>
+									<p class="sale-link-description">Постельное белье</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">2999 ₽</p>
+										<p class="sale-price sale-old-price">6030 ₽</p>
+									</div>
+									<p class="sale-link-description">Фен</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/mittens.webp" alt="варежки">
+									<p class=" sale sale-link-sale">-30%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">540 ₽</p>
+										<p class="sale-price sale-old-price">890 ₽</p>
+									</div>
+									<p class="sale-link-description">Варежки-мишки</p>
+								</div>
+							</a>
+						</li>
+						<li class="section-sale-item">
+							<a href="./" class="section-sale-link">
+								<div class="sale-link-top">
+									<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
+									<p class=" sale sale-link-sale">-50%</p>
+								</div>
+								<div class="sale-link-content">
+									<div class="sale-price-wrapper">
+										<p class="sale-price sale-new-price">1299 ₽</p>
+										<p class="sale-price sale-old-price">2598 ₽</p>
+									</div>
+									<p class="sale-link-description">Пара футболок</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
 			<div class="container">
 				<div class="footer-wrapper">
 					<div class="footer-wrapper-top">

@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   min-width: 320px;
   min-height: 100%;
   background-color: $white;
@@ -19,12 +20,6 @@ body {
   font-style: normal;
   color: $black-grey;
   font-weight: 400;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
 }
 
 img, svg {
@@ -84,7 +79,6 @@ iframe {
   max-width: 1920px;
   padding: 0 75px;
   margin: 0 auto;
-  width: 100%;
 }
 
 .sale {
@@ -115,7 +109,7 @@ iframe {
 }
 
 .main {
-  flex: 1 1 auto;
+  max-width: 100%;
   padding: 90px 0 189px;
 }
 
@@ -143,6 +137,7 @@ iframe {
 @include tablet {
   .container {
     max-width: 768px;
+    min-width: 480px;;
     padding: 0 34px;
   }
   .main {
@@ -160,10 +155,15 @@ iframe {
 
 @include mobile {
   .container {
-    max-width: 320px;
+    max-width: 100%;
     padding: 0 20px;
   }
   .main {
     padding: 21px 0 70px;
+  }
+  .sale {
+    width: 50px;
+    height: 50px;
+    font-size: 16px;
   }
 }

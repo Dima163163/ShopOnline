@@ -3,6 +3,7 @@ $black: #000;
 $blue-light: #3670C7;
 $grey-white: #E8E8E8;
 $grey-black: #8F8F8F;
+$grey-dark: #525252;
 $white: #FFF;
 $white-grey: #EFEFEF;
 $orange: #FFBD13;
@@ -12,6 +13,13 @@ $red: #F91155;
 $font: Lato;
 
 $breakpoint__xxl: 1919px;
-$breakpoint__xl: 1024px;
-$breakpoint__md: 768px;
+$breakpoint__xl: 1025px;
+
+$breakpoint__xm: 1024px;
+$breakpoint__md: 769px;
+
+$breakpoint__ml: 768px;
+$breakpoint__ls: 481px;
+
+$breakpoint__ls: 480px;
 $breakpoint__sm: 320px;
