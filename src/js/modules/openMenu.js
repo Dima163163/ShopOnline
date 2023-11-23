@@ -1,5 +1,5 @@
 // Функция открытия и закрытия меню
-const openCloseMenu = (menuBurger, menuImgBtn) => {
+export const openCloseMenu = (menuBurger, menuImgBtn) => {
   menuBurger.classList.toggle('is-visible');
   menuImgBtn.classList.toggle('is-close');
 };

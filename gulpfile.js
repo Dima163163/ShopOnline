@@ -29,7 +29,9 @@ const sass = gulpSass(sassPkg);
 const webpackConf = {
   mode: dev ? 'development' : 'production',
   devtool: dev ? 'eval-source-map' : false,
-  optimization: dev ? {minimize: true} : {minimize: false},
+  optimization: {
+    minimize: true,
+  },
   output: {
     filename: 'index.js',
   },
