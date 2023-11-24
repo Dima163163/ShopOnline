@@ -1,7 +1,8 @@
+import {openGood} from './openGood.js';
 import {openCloseMenu} from './openMenu.js';
 
 const initCategoriesGoods = (fetchRequest, postfix,
-    sectionGoods, renderGoods, menuBurger, menuImgBtn) => {
+    sectionGoods, renderGoods, menuBurger, menuImgBtn, postdixDisc) => {
   const menuBtnsCategories = document.querySelectorAll('.menu-link-category');
 
   menuBtnsCategories.forEach(menuBtn => {
@@ -16,6 +17,9 @@ const initCategoriesGoods = (fetchRequest, postfix,
               data,
             }),
           });
+      const container = document.createElement('div');
+      container.classList.add('container');
+
       const h2 = document.createElement('h2');
       h2.classList.add('categories-title');
       h2.textContent = categoryName;
@@ -26,8 +30,10 @@ const initCategoriesGoods = (fetchRequest, postfix,
       ul.classList.add('section-sale-list');
       ul.append(goods);
       sectionGoods.textContent = '';
-      sectionGoods.append(h2, ul);
+      container.append(h2, ul);
+      sectionGoods.append(container);
       openCloseMenu(menuBurger, menuImgBtn);
+      openGood(sectionGoods, fetchRequest, renderGoods, postdixDisc);
     });
   });
 };

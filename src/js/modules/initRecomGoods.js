@@ -1,15 +1,17 @@
+// import {openGood} from './openGood.js';
 
 export const initRecomGoods = async (fetchRequest,
-    renderGoods, listGoods, postfix) => {
+    renderGoods, postfix) => {
   const {err, data} = await fetchRequest(postfix, {
     callback: (err, data) => ({
       err,
       data,
     }),
   });
-  console.log('dataRec', data);
-  const goods = renderGoods(err, data);
-  console.log('goods: ', goods);
 
-  listGoods.append(goods);
+  const goods = renderGoods(err, data);
+
+  return goods;
+  // listGoods.append(goods);
+  // openGood(sectionGoods);
 };

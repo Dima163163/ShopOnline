@@ -3,9 +3,6 @@
   flex-direction: column;
 }
 
-.section-sale-good {
-  display: none;
-}
 
 .section-sale-title {
   font-size: 50px;
@@ -45,6 +42,10 @@
   position: absolute;
   bottom: 20px;
   left: 20px;
+}
+
+.sale-id {
+  display: none;
 }
 
 .sale-link-content {

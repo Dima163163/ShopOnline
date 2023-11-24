@@ -4,13 +4,16 @@ import elements from './modules/pageElements.js';
 import {rednerBlogs, renderPagination} from './modules/pagination.js';
 import {menuControl} from './modules/openMenu.js';
 import {fetchRequest} from './modules/fetchRequest.js';
-import {initRecomGoods} from './modules/initRecomGoods.js';
+
 import renderGoods from './modules/renderGoods.js';
 import initCategoriesGoods from './modules/filterCategories.js';
 import {createHeaderMenu} from './modules/createHeaderMenu.js';
+import {appendGoods} from './modules/appendGoods.js';
+import {openGood} from './modules/openGood.js';
+import {openBasket} from './modules/openBasket.js';
 const {blogInner, paginationSection, currentPage, blogsCads,
   menuBtn, menuImgBtn, menuBurger, listGoods,
-  listCategories, sectionGoods} = elements;
+  listCategories, sectionGoods, basketBtn} = elements;
 
 
 const timerWrapper = document.querySelector('.disconts-timer');
@@ -32,10 +35,13 @@ const init = async () => {
     rednerBlogs(blogInner, blogsCads, currentPage);
     renderPagination(paginationSection, blogsCads, blogInner);
   }
-  initRecomGoods(fetchRequest, renderGoods, listGoods, '/api/goods/discount');
+  openBasket(basketBtn, sectionGoods);
+  appendGoods(fetchRequest, renderGoods, listGoods,
+      '/api/goods/discount', sectionGoods);
+  openGood(sectionGoods, fetchRequest, renderGoods, '/api/goods/discount');
   initCategoriesGoods(
       fetchRequest, '/api/goods/category/', sectionGoods,
-      renderGoods, menuBurger, menuImgBtn);
+      renderGoods, menuBurger, menuImgBtn, '/api/goods/discount');
   menuControl(menuBtn, menuImgBtn, menuBurger);
 };
 

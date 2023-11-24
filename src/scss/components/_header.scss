@@ -99,7 +99,7 @@
   align-items: center;
 }
 
-.header-panel__item {
+.header-panel__link {
   justify-items: center;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
@@ -256,7 +256,7 @@
     max-width: 82px;
     background-size: 20px;
   }
-  .header-panel__item {
+  .header-panel__link {
     gap: 0px;
     grid-template-rows: 1fr;
   }

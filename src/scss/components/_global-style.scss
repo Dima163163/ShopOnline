@@ -9,17 +9,24 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
 }
 
 body {
   overflow-x: hidden;
   min-width: 320px;
-  min-height: 100%;
+  height: 100%;
   background-color: $white;
   font-family: $font, sans-serif;
   font-style: normal;
   color: $black-grey;
   font-weight: 400;
+}
+
+#wrap {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 img, svg {
@@ -77,6 +84,7 @@ iframe {
 */
 .container {
   max-width: 1920px;
+  width: 100%;
   padding: 0 75px;
   margin: 0 auto;
 }
@@ -109,6 +117,7 @@ iframe {
 }
 
 .main {
+  flex: 1 1 auto;
   max-width: 100%;
   padding: 90px 0 189px;
 }

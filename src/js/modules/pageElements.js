@@ -7,6 +7,7 @@ const listGoods = document.querySelector('.section-sale-list');
 const menuBtnsCategorys = document.querySelectorAll('.menu-link-category');
 const listCategories = document.querySelector('.menu-list-categories');
 const sectionGoods = document.querySelector('.section-wrapper');
+const basketBtn = document.querySelector('.header-panel__link-basket');
 
 
 const currentPage = 1;
@@ -24,4 +25,5 @@ export default {
   menuBtnsCategorys,
   listCategories,
   sectionGoods,
+  basketBtn,
 };

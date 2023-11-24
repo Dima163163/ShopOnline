@@ -15,6 +15,7 @@ const renderGoods = (err, data) => {
           </div>
           <div class="sale-link-content">
             <div class="sale-price-wrapper">
+              <p class="sale-id">${item.id}</p>
               <p class="sale-price sale-new-price">
               ${item.discount > 0 ?
               item.price - (item.price * (item.discount / 100)) :
