@@ -1,3 +1,7 @@
+.section-inner-basket {
+  margin-bottom: 100px;
+}
+
 .container-basket {
   display: flex;
   gap: 30px;
@@ -424,6 +428,9 @@
 }
 
 @include desktop {
+  .section-inner-basket {
+    margin-bottom: 100px;
+  }
   .section-basket-wrapper {
     flex-direction: column;
   }
@@ -456,6 +463,9 @@
 }
 
 @include laptop() {
+  .section-inner-basket {
+    margin-bottom: 60px;
+  }
   .section-basket-wrapper {
     flex-direction: column;
   }
@@ -492,6 +502,9 @@
 }
 
 @include tablet() {
+  .section-inner-basket {
+    margin-bottom: 50px;
+  }
   .section-basket-wrapper {
     max-width: 100%;
     flex-direction: column;
