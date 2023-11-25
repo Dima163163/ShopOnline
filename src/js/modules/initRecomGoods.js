@@ -1,7 +1,8 @@
 // import {openGood} from './openGood.js';
 
+// создает список рекомендованных товаров и возвращает его
 export const initRecomGoods = async (fetchRequest,
-    renderGoods, postfix) => {
+    createGoods, postfix) => {
   const {err, data} = await fetchRequest(postfix, {
     callback: (err, data) => ({
       err,
@@ -9,9 +10,7 @@ export const initRecomGoods = async (fetchRequest,
     }),
   });
 
-  const goods = renderGoods(err, data);
+  const goods = createGoods(err, data);
 
   return goods;
-  // listGoods.append(goods);
-  // openGood(sectionGoods);
 };

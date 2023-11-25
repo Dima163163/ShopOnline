@@ -5,7 +5,7 @@ import {rednerBlogs, renderPagination} from './modules/pagination.js';
 import {menuControl} from './modules/openMenu.js';
 import {fetchRequest} from './modules/fetchRequest.js';
 
-import renderGoods from './modules/renderGoods.js';
+import createGoods from './modules/createGoods.js';
 import initCategoriesGoods from './modules/filterCategories.js';
 import {createHeaderMenu} from './modules/createHeaderMenu.js';
 import {appendGoods} from './modules/appendGoods.js';
@@ -35,13 +35,13 @@ const init = async () => {
     rednerBlogs(blogInner, blogsCads, currentPage);
     renderPagination(paginationSection, blogsCads, blogInner);
   }
-  openBasket(basketBtn, sectionGoods);
-  appendGoods(fetchRequest, renderGoods, listGoods,
+  openBasket(basketBtn, sectionGoods, fetchRequest);
+  appendGoods(fetchRequest, createGoods, listGoods,
       '/api/goods/discount', sectionGoods);
-  openGood(sectionGoods, fetchRequest, renderGoods, '/api/goods/discount');
+  openGood(sectionGoods, fetchRequest, createGoods, '/api/goods/discount');
   initCategoriesGoods(
       fetchRequest, '/api/goods/category/', sectionGoods,
-      renderGoods, menuBurger, menuImgBtn, '/api/goods/discount');
+      createGoods, menuBurger, menuImgBtn, '/api/goods/discount');
   menuControl(menuBtn, menuImgBtn, menuBurger);
 };
 

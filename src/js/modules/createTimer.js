@@ -1,3 +1,4 @@
+// Создает таймер
 export const createTimer = (selector) => {
   const elem = document.querySelector(selector);
   if (elem) {

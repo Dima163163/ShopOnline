@@ -16,7 +16,6 @@ const loadBlogs = async () => {
   const result = await fetch('https://gorest.co.in/public-api/posts');
   const response = await result.json();
   const data = await response.data;
-  console.log('data: ', data);
 
   return data;
 };

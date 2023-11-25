@@ -1,4 +1,6 @@
-export const renderGoodCard = (err, data) => {
+
+// Создание страницы с товаром
+export const createGoodCard = (err, data) => {
   const template = document.createDocumentFragment();
   const div = document.createElement('div');
   div.classList.add('section-inner');
@@ -120,7 +122,6 @@ export const renderGoodCard = (err, data) => {
   `);
 
   template.append(div);
-
 
   return template;
 };

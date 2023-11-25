@@ -3,7 +3,8 @@ import {initRecomGoods} from './initRecomGoods.js';
 import {createSaleSection} from './createSaleSection.js';
 import {addGoodBasket} from './addGoodBasket.js';
 
-export const openGood = (sectionGoods, fetchRequest, renderGoods, postfix) => {
+// Открывает выбранный товар при клике по нему
+export const openGood = (sectionGoods, fetchRequest, createGoods, postfix) => {
   const btnsGoodOpen = document.querySelectorAll('.section-sale-link');
   btnsGoodOpen.forEach(btnGoodOpen => {
     btnGoodOpen.addEventListener('click', async (e) => {
@@ -12,14 +13,13 @@ export const openGood = (sectionGoods, fetchRequest, renderGoods, postfix) => {
       e.target.closest('.section-sale-link')
           .querySelector('.sale-id').textContent;
       const cardGood = await createGoodPage(idGood);
-      console.log('cardGood: ', cardGood);
       sectionGoods.textContent = '';
 
-      const goods = await initRecomGoods(fetchRequest, renderGoods, postfix);
+      const goods = await initRecomGoods(fetchRequest, createGoods, postfix);
       const {sectionSale, saleList} = createSaleSection();
       saleList.append(goods);
       sectionGoods.append(cardGood, sectionSale);
-      openGood(sectionGoods, fetchRequest, renderGoods, '/api/goods/discount');
+      openGood(sectionGoods, fetchRequest, createGoods, '/api/goods/discount');
       addGoodBasket();
     });
   });

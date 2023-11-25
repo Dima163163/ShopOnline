@@ -1,8 +1,9 @@
 import {openGood} from './openGood.js';
 import {openCloseMenu} from './openMenu.js';
 
+// фильтрует товары по категориям
 const initCategoriesGoods = (fetchRequest, postfix,
-    sectionGoods, renderGoods, menuBurger, menuImgBtn, postdixDisc) => {
+    sectionGoods, createGoods, menuBurger, menuImgBtn, postdixDisc) => {
   const menuBtnsCategories = document.querySelectorAll('.menu-link-category');
 
   menuBtnsCategories.forEach(menuBtn => {
@@ -23,8 +24,8 @@ const initCategoriesGoods = (fetchRequest, postfix,
       const h2 = document.createElement('h2');
       h2.classList.add('categories-title');
       h2.textContent = categoryName;
-      const goods = renderGoods(err, data);
-      console.log('goods: ', goods);
+      const goods = createGoods(err, data);
+
 
       const ul = document.createElement('ul');
       ul.classList.add('section-sale-list');
@@ -33,7 +34,7 @@ const initCategoriesGoods = (fetchRequest, postfix,
       container.append(h2, ul);
       sectionGoods.append(container);
       openCloseMenu(menuBurger, menuImgBtn);
-      openGood(sectionGoods, fetchRequest, renderGoods, postdixDisc);
+      openGood(sectionGoods, fetchRequest, createGoods, postdixDisc);
     });
   });
 };

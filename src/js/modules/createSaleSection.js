@@ -1,3 +1,4 @@
+// Создает секцию со скидками
 export const createSaleSection = () => {
   const sectionSale = document.createElement('div');
   sectionSale.classList.add('section-sale', 'section-sale-good');

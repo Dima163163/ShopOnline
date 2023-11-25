@@ -1,4 +1,5 @@
-const renderGoods = (err, data) => {
+// создает список товаров
+const createGoods = (err, data) => {
   const template = document.createDocumentFragment();
 
   const goods = data.map(item => {
@@ -35,4 +36,4 @@ const renderGoods = (err, data) => {
   return template;
 };
 
-export default renderGoods;
+export default createGoods;

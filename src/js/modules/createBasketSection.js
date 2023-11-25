@@ -1,4 +1,4 @@
-
+// Создает секцию корзины с товарами
 export const createBasketSection = () => {
   const template = document.createDocumentFragment();
   const div = document.createElement('div');
@@ -8,7 +8,7 @@ export const createBasketSection = () => {
   <div class="breadcrumps-wrapper breadcrumps-wrapper-article">
         <div class="container">
           <div class="section-breadcrumbs">
-            <a href="./index-shop.html" class="section-breadcrumb">Главная</a>
+            <a href="./index.html" class="section-breadcrumb">Главная</a>
             <div class="section-arrow"></div>
             <p class="section-breadcrumb">Корзина</p>
           </div>
@@ -26,12 +26,13 @@ export const createBasketSection = () => {
                 <div class="basket-checkbox-wrapper">
                   <label class="basket-label">
                     <input type="checkbox" name="checkbox" 
-                    class="real-checkbox">
+                    class="real-checkbox basket-checkbox-goods">
                     <span class="custom-checkbox"></span>
                     Выбрать все
                   </label>
                   <button class="basket-btn-del"></button>
                 </div>
+                <div class="basket-goods-wrapper"></div>
                 </div>
               </div>
               <div class="delivery-wrapper-card">
@@ -72,7 +73,10 @@ export const createBasketSection = () => {
                 <div class="total-inner-center">
                   <div class="total-inner-item total-inner-count">
                     <p class="total-inner-grey-text 
-                    total-inner-count-text">Товары, 2  шт.</p>
+                    total-inner-count-text">
+                    Товары, 
+                    <span class="total-inner-count-span"></span>
+                    </p>
                     <p class="total-inner-grey-text 
                     total-inner-count-sum"> ₽</p>
                   </div>
@@ -139,6 +143,5 @@ export const createBasketSection = () => {
   `);
 
   template.append(div);
-  console.log('template: ', template);
   return template;
 };

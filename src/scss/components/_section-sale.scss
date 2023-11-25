@@ -19,7 +19,7 @@
 
 .section-sale-item {
   width: 420px;
-  height: 394px;
+  min-height: 394px;
 }
 
 .section-sale-link {
@@ -93,7 +93,7 @@
   }
   .section-sale-item {
     width: 300px;
-    height: 397px;
+    min-height: 397px;
   }
   .sale-link-img {
     width: 300px;
@@ -118,7 +118,7 @@
   }
   .section-sale-item {
     width: 300px;
-    height: 397px;
+    min-height: 397px;
   }
   .sale-link-img {
     width: 296px;
@@ -139,7 +139,7 @@
   }
   .section-sale-item {
     width: 220px;
-    height: 294px;
+    min-height: 294px;
   }
   .sale-link-img {
     width: 220px;
@@ -172,7 +172,7 @@
   }
   .section-sale-item {
     width: 130px;
-    height: 200px;
+    min-height: 200px;
   }
   .sale-link-img {
     width: 130px;

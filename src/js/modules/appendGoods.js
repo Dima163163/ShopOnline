@@ -1,10 +1,11 @@
 import {initRecomGoods} from './initRecomGoods.js';
 import {openGood} from './openGood.js';
 
-export const appendGoods = async (fetchRequest, renderGoods,
+// Добавляет скидочные товары на основную страницу
+export const appendGoods = async (fetchRequest, createGoods,
     list, postfix, section) => {
-  const goods = await initRecomGoods(fetchRequest, renderGoods, postfix);
-  console.log('goods: ', goods);
+  const goods = await initRecomGoods(fetchRequest, createGoods, postfix);
+
   list.append(goods);
-  openGood(section, fetchRequest, renderGoods, postfix);
+  openGood(section, fetchRequest, createGoods, postfix);
 };

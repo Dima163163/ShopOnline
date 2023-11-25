@@ -1,3 +1,4 @@
+// Создает список категорий и добавляет их в header
 export const createHeaderMenu = async (fetchRequest,
     listCategories, postfix) => {
   const {err, data} = await fetchRequest(postfix, {
