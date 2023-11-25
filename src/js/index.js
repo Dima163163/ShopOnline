@@ -35,7 +35,9 @@ const init = async () => {
     rednerBlogs(blogInner, blogsCads, currentPage);
     renderPagination(paginationSection, blogsCads, blogInner);
   }
-  openBasket(basketBtn, sectionGoods, fetchRequest);
+  openBasket(basketBtn, sectionGoods, fetchRequest,
+      createGoods, '/api/goods/discount',
+  );
   appendGoods(fetchRequest, createGoods, listGoods,
       '/api/goods/discount', sectionGoods);
   openGood(sectionGoods, fetchRequest, createGoods, '/api/goods/discount');

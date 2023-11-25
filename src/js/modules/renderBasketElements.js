@@ -1,9 +1,15 @@
+import {addGoodBasket} from './addGoodBasket.js';
 import {createBasketSection} from './createBasketSection.js';
 import {createCardDeliveryImage} from './createCardDeliveryImage.js';
 import {createGoodCardBasket} from './createGoodCardBasket.js';
+import {createSaleSection} from './createSaleSection.js';
 import {deleteGoods, deleteGoodsInCard} from './deleteGoods.js';
+import {initRecomGoods} from './initRecomGoods.js';
+import {openGood} from './openGood.js';
 
-export const renderBasketElement = (basketBtn, sectionGoods, fetchRequest) => {
+export const renderBasketElement = async (basketBtn,
+    sectionGoods, fetchRequest,
+    createGoods, postfix) => {
   const mainSection = document.querySelector('.main');
   mainSection.classList.add('main-good');
   const section = createBasketSection();
@@ -66,4 +72,10 @@ export const renderBasketElement = (basketBtn, sectionGoods, fetchRequest) => {
       totalSpan, totalInnerPrice, totalInerCountSum,
       totalInerDiscountSum, deliveryImageContainer,
       basketBtn, sectionGoods, fetchRequest);
+  const goods = await initRecomGoods(fetchRequest, createGoods, postfix);
+  const {sectionSale, saleList} = createSaleSection();
+  saleList.append(goods);
+  sectionGoods.append(sectionSale);
+  openGood(sectionGoods, fetchRequest, createGoods, '/api/goods/discount');
+  addGoodBasket();
 };
