@@ -1,4 +1,4 @@
-const URL = 'http://localhost:3000';
+const URL = 'http://mica-short-xenoposeidon.glitch.me';
 // Получение данных с сервера и отправка дананных на сервер
 export const fetchRequest = async (postfix, {
   method = 'GET',

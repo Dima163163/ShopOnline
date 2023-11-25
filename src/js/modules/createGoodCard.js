@@ -26,14 +26,14 @@ export const createGoodCard = (err, data) => {
               <div class="section-good-inner">
                 <div class="good-product-card">
                 <picture class="good-image-wrapper">
-                <source media="(max-width: 1920px)" srcset="http://localhost:3000/${data.image}"
+                <source media="(max-width: 1920px)" srcset="http://mica-short-xenoposeidon.glitch.me/${data.image}"
                 type="image/webp">
-                <source media="(max-width: 768px)" srcset="http://localhost:3000/${data.image}"
+                <source media="(max-width: 768px)" srcset="http://mica-short-xenoposeidon.glitch.me/${data.image}"
                 type="image/webp">
                 <source media="(max-width: 320px)"
-                srcset="http://localhost:3000/${data.image}" type="image/webp">
-                <source srcset="http://localhost:3000/${data.image}" type="image/avif">
-                <img class="good-image" src="http://localhost:3000/${data.image}" alt="${data.image}">
+                srcset="http://mica-short-xenoposeidon.glitch.me/${data.image}" type="image/webp">
+                <source srcset="http://mica-short-xenoposeidon.glitch.me/${data.image}" type="image/avif">
+                <img class="good-image" src="http://mica-short-xenoposeidon.glitch.me/${data.image}" alt="${data.image}">
                 </picture>
                 <p class="sale good__sale">-${data.discount}%</p>
                 </div>
