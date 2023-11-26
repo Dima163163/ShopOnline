@@ -10,7 +10,7 @@ const createGoods = (err, data) => {
     li.insertAdjacentHTML('beforeend', `
         <a href="./" class="section-sale-link">
           <div class="sale-link-top">
-            <img class="sale-link-img" src="http://mica-short-xenoposeidon.glitch.me/${item.image}" alt="${item.title}">
+            <img class="sale-link-img" src="https://mica-short-xenoposeidon.glitch.me/${item.image}" alt="${item.title}">
             ${item.discount > 0 ?
             `<p class="sale sale-link-sale">-${item.discount}%</p>` : ''}
           </div>

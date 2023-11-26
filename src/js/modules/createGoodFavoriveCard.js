@@ -5,7 +5,7 @@ export const createGoodFavoriteCard = (data) => {
   li.insertAdjacentHTML('beforeend', `
     <a href="./" class="section-sale-link section-sale-link-favorite">
       <div class="sale-link-top">
-        <img class="sale-link-img" src="http://mica-short-xenoposeidon.glitch.me/${data.image}" alt="${data.title}">
+        <img class="sale-link-img" src="https://mica-short-xenoposeidon.glitch.me/${data.image}" alt="${data.title}">
         <p class=" sale sale-link-sale">-${data.discount}%</p>
       </div>
       <div class="sale-link-content">

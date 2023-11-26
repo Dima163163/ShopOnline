@@ -13,7 +13,7 @@ export const createGoodCardBasket = (data, countGoodCard) => {
           <span class="custom-checkbox custom-checkbox-good"></span>
         </label>
         <img class="basket-good-card-img" 
-        src="http://mica-short-xenoposeidon.glitch.me/${data.image}" alt="${data.title}">
+        src="https://mica-short-xenoposeidon.glitch.me/${data.image}" alt="${data.title}">
       </div>
       <div class="good-card-descr">
         <h3 class="good-card-title">
