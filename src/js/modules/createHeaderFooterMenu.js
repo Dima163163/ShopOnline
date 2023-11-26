@@ -1,6 +1,6 @@
 // Создает список категорий и добавляет их в header
-export const createHeaderMenu = async (fetchRequest,
-    listCategories, postfix) => {
+export const createHeaderFooterMenu = async (fetchRequest,
+    listCategories, postfix, footerListCategories) => {
   const {err, data} = await fetchRequest(postfix, {
     callback: (err, data) => ({
       err,
@@ -19,5 +19,17 @@ export const createHeaderMenu = async (fetchRequest,
     return li;
   });
 
+  const categoriesFooter = data.map(category => {
+    const li = document.createElement('li');
+    li.classList.add('footer-content-item');
+    const button = document.createElement('button');
+    button.classList.add('menu-link', 'footer-content-link');
+    button.textContent = category;
+    li.append(button);
+
+    return li;
+  });
+
   listCategories.append(...categories);
+  footerListCategories.append(...categoriesFooter);
 };

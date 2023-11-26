@@ -74,10 +74,13 @@
 .footer-content-list {
   display: flex;
   flex-direction: column;
-  height: 240px;
+  height: 310px;
   max-width: 480px;
   flex-wrap: wrap;
   gap: 15px;
+}
+.footer-menu-list-categories .menu-link-category {
+  color: $white;
 }
 
 .footer-content-link,

@@ -6,6 +6,11 @@ const menuBurger = document.querySelector('.menu');
 const listGoods = document.querySelector('.section-sale-list');
 const menuBtnsCategorys = document.querySelectorAll('.menu-link-category');
 const listCategories = document.querySelector('.menu-list-categories');
+const footerListCategories =
+document.querySelector('.footer-menu-list-categories');
+const btnFavorite = document.querySelector('.header-panel__link-favorites');
+
+
 const sectionGoods = document.querySelector('.section-wrapper');
 const basketBtn = document.querySelector('.header-panel__link-basket');
 
@@ -24,6 +29,8 @@ export default {
   listGoods,
   menuBtnsCategorys,
   listCategories,
+  footerListCategories,
   sectionGoods,
   basketBtn,
+  btnFavorite,
 };

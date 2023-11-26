@@ -50,7 +50,7 @@ export const createGoodCard = (err, data) => {
                   <div class="price-btn-wrapper">
                     <button data-id='${data.id}'
                     class="price-btn-buy">Добавить в корзину</button>
-                    <button class="price-btn-like" 
+                    <button data-index='${data.id}' class="price-btn-like" 
                     aria-label="добавить в избаранное"></button>
                   </div>
                   <div class="delivery-wrapper">

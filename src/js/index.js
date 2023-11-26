@@ -7,13 +7,15 @@ import {fetchRequest} from './modules/fetchRequest.js';
 
 import createGoods from './modules/createGoods.js';
 import initCategoriesGoods from './modules/filterCategories.js';
-import {createHeaderMenu} from './modules/createHeaderMenu.js';
+import {createHeaderFooterMenu} from './modules/createHeaderFooterMenu.js';
 import {appendGoods} from './modules/appendGoods.js';
 import {openGood} from './modules/openGood.js';
 import {openBasket} from './modules/openBasket.js';
+import {openFavorite} from './modules/openFavorite.js';
 const {blogInner, paginationSection, currentPage, blogsCads,
   menuBtn, menuImgBtn, menuBurger, listGoods,
-  listCategories, sectionGoods, basketBtn} = elements;
+  listCategories, sectionGoods, basketBtn,
+  footerListCategories, btnFavorite} = elements;
 
 
 const timerWrapper = document.querySelector('.disconts-timer');
@@ -21,7 +23,8 @@ const timerWrapper = document.querySelector('.disconts-timer');
 
 // Функция запуска функций
 const init = async () => {
-  await createHeaderMenu(fetchRequest, listCategories, '/api/categories');
+  await createHeaderFooterMenu(fetchRequest, listCategories,
+      '/api/categories', footerListCategories);
   if (timerWrapper) {
     const deadlineTimer = timerWrapper.dataset.timerDeadline;
     createTimer('[data-timer-deadline]');
@@ -35,6 +38,7 @@ const init = async () => {
     rednerBlogs(blogInner, blogsCads, currentPage);
     renderPagination(paginationSection, blogsCads, blogInner);
   }
+  openFavorite(btnFavorite, '/api/goods/');
   openBasket(basketBtn, sectionGoods, fetchRequest,
       createGoods, '/api/goods/discount',
   );

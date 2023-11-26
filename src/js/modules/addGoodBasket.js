@@ -3,7 +3,7 @@ export const addGoodBasket = () => {
   const addBtns = document.querySelectorAll('.price-btn-buy');
 
   addBtns.forEach(addBtn => {
-    addBtn.addEventListener('click', async () => {
+    addBtn.addEventListener('click', () => {
       const goodsId = JSON.parse(localStorage.getItem('goodsId')) || [];
       const id = addBtn.dataset.id;
       goodsId.push(id);

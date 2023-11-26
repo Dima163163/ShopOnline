@@ -19,7 +19,7 @@ const createGoods = (err, data) => {
               <p class="sale-id">${item.id}</p>
               <p class="sale-price sale-new-price">
               ${item.discount > 0 ?
-              item.price - (item.price * (item.discount / 100)) :
+              Math.round(item.price - (item.price * (item.discount / 100))) :
               item.price} ₽</p>
               ${item.discount > 0 ?
               `<p class="sale-price sale-old-price">${item.price} ₽</p>` : ''}

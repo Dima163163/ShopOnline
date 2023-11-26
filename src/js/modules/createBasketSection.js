@@ -125,7 +125,7 @@ export const createBasketSection = () => {
               <div class="total-inner-conditions">
                 <label class="checkbox-conditions">
                   <input type="checkbox" name="checkbox-conditions" 
-                  class="real-checkbox">
+                  class="real-checkbox real-checkbox-buy">
                     <span class="custom-checkbox 
                     custom-checkbox-conditions"></span>
                     <div class="custom-checkbox-conditions-text">

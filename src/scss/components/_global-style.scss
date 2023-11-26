@@ -126,6 +126,13 @@ iframe {
   padding: 60px 0 150px;
 }
 
+.submit-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 @include desktop  {
   .container {
     max-width: 100%;
