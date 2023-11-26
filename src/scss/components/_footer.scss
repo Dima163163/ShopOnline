@@ -166,6 +166,7 @@
     margin-bottom: 60px;
   }
   .footer-content-list {
+    min-height: 350px;
     height: auto;
     width: 100%;
   }
@@ -185,7 +186,7 @@
     flex-wrap: nowrap;
   }
   .footer-content-center__catalog {
-    min-height: 537px;
+    min-height: 650px;
     width: 225px;
     margin-right: 75px;
   }
@@ -221,7 +222,7 @@
   .footer-content-center__catalog {
     width: 176px;
     margin-right: 0px;
-    min-height: 384px;
+    min-height: 500px;
     height: 384px;
   }
   .footer-title {
@@ -233,6 +234,7 @@
     height: 330px;
     gap: 10px;
     padding-right: 0;
+    flex-wrap: nowrap;
   }
   .footer-content-link,
   .footer-content-link-buyers {
