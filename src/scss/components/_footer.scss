@@ -58,7 +58,7 @@
 }
 
 .footer-content-center__catalog {
-  width: 480px;
+  width: 620px;
   min-height: 307px;
   margin-right: 98px;
 }
@@ -74,7 +74,7 @@
 .footer-content-list {
   display: flex;
   flex-direction: column;
-  height: 310px;
+  min-height: 310px;
   max-width: 480px;
   flex-wrap: wrap;
   gap: 15px;
@@ -160,13 +160,14 @@
 
 @include desktop {
   .footer-content-wrapper {
+    gap: 60px;
     max-width: 100%;
   }
   .footer-content-left {
     margin-bottom: 60px;
   }
   .footer-content-list {
-    min-height: 350px;
+    width: 500px;
     height: auto;
     width: 100%;
   }
