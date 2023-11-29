@@ -15,7 +15,7 @@ export const createCategoriesPage = async (menuBtn,
   const container = document.createElement('div');
   container.classList.add('container');
 
-  const h2 = document.createElement('h2');
+  const h2 = document.createElement('h1');
   h2.classList.add('categories-title');
   h2.textContent = categoryName;
   const goods = createGoods(err, data);

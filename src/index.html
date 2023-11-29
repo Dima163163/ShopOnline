@@ -31,7 +31,7 @@
 						</svg>
 					</a>
 					<button class="header__btn" aria-label="Кнопка меню">
-						<div class="header__btn-icon"></div>
+						<span class="header__btn-icon"></span>
 						<p class="header__btn-text">Меню</p>
 					</button>
 						<form class="header__form">
@@ -66,42 +66,43 @@
 				</div>
 			</div>
       <div class="menu">
+				<div class="container">
 					<div class="menu-wrapper">
-					<div class="menu-wrapper-content menu-catalog">
-          <h2 class="menu-title">Каталог</h2>
-					<ul class="menu-list menu-list-categories">
-					</ul>
-					</div>
-					<div class="menu-wrapper-content">
-						<h2 class="menu-title">Покупателям</h2>
-						<ul class="menu-list menu-list-buyers">
-							<li class="menu-item menu-item-buyers">
-								<a href="#" class="menu-link menu-link-buyers">Оплата заказа</a>
-							</li>
-							<li class="menu-item menu-item-buyers">
-								<a href="#" class="menu-link menu-link-buyers">Условия доставки</a>
-							</li>
-							<li class="menu-item menu-item-buyers">
-								<a href="#" class="menu-link menu-link-buyers">Условия возврата заказа</a>
-							</li>
-							<li class="menu-item menu-item-buyers">
-								<a href="#" class="menu-link menu-link-buyers">Блог</a>
-							</li>
+						<div class="menu-wrapper-content menu-catalog">
+						<h3 class="menu-title">Каталог</h3>
+						<ul class="menu-list menu-list-categories">
 						</ul>
+						</div>
+						<div class="menu-wrapper-content">
+							<h3 class="menu-title">Покупателям</h3>
+							<ul class="menu-list menu-list-buyers">
+								<li class="menu-item menu-item-buyers">
+									<a href="#" class="menu-link menu-link-buyers">Оплата заказа</a>
+								</li>
+								<li class="menu-item menu-item-buyers">
+									<a href="#" class="menu-link menu-link-buyers">Условия доставки</a>
+								</li>
+								<li class="menu-item menu-item-buyers">
+									<a href="#" class="menu-link menu-link-buyers">Условия возврата заказа</a>
+								</li>
+								<li class="menu-item menu-item-buyers">
+									<a href="#" class="menu-link menu-link-buyers menu-link-blog-header">Блог</a>
+								</li>
+							</ul>
+						</div>
+						<div class="menu-wrapper-content">
+							<h3 class="menu-title">Связаться с нами</h3>
+							<ul class="menu-list menu-list-connection">
+								<li class="menu-item menu-item-connection">
+									<a href="#" class="menu-link menu-link-connection">Контакты</a>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<div class="menu-wrapper-content">
-						<h2 class="menu-title">Связаться с нами</h2>
-						<ul class="menu-list menu-list-connection">
-							<li class="menu-item menu-item-connection">
-								<a href="#" class="menu-link menu-link-connection">Контакты</a>
-							</li>
-						</ul>
-					</div>
-					</div>
+				</div>
 			</div>
 		</header>
 		<main class="main">
-			<!-- <div class="container"> -->
 				<div class="section-wrapper">
 					<div class="section-goods">
 						<div class="container">
@@ -133,16 +134,18 @@
 						<p class="sale sneakers__text">-40%</p>
 					</li>
 					<li class="sneakers-green" tabindex="0">
-						<p class="sneakers-green__text">Вторая пара кроссовок <br>
+						<h1 class="visually-hidden">Вторая пара кроссовок в подарок!</h1>
+						<p class="sneakers-green__text">Вторая пара кроссовок
 							<span class="sneakers-green__span">в подарок!</span>
 						</p>
 					</li>
 					<li class="present" tabindex="0">
-						<p class="present__text">Идеи новогодних 
+						<h1 class="present__text">Идеи новогодних 
 							подарков
-						</p>
+						</h1>
 					</li>
 					<li class="macbook" tabindex="0">
+						<h1 class="visually-hidden">Выгодно в декабре</h1>
 						<p class="macbook__text">
 							Выгодно в декабре
 						</p>
@@ -151,6 +154,7 @@
 						</p>
 					</li>
 					<li class="newyears-decor" tabindex="0">
+						<h1 class="visually-hidden">Новогодние украшения</h1>
 						<p class="newyears-decor__text">
 							Новогодние украшения
 						</p>
@@ -162,6 +166,7 @@
 						</p>
 					</li>
 					<li class="him" tabindex="0">
+						<h1 class="visually-hidden">Скидка 25% на бытовую химию</h1>
 						<p class="sale him__sale">
 							-25%
 						</p>
@@ -178,132 +183,10 @@
 					<div class="section-sale">
 						<div class="container">
 							<h2 class="section-sale-title">Это выгодно!</h2>
-							<ul class="section-sale-list">
-								<!-- <li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
-											<p class=" sale sale-link-sale">-50%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">1299 ₽</p>
-												<p class="sale-price sale-old-price">2598 ₽</p>
-											</div>
-											<p class="sale-link-description">Пара футболок</p>
-										</div>
-									</a>
-								</li>
-								<li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/sneakers-sale.webp" alt="кросовки">
-											<p class=" sale sale-link-sale">-40%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">2099 ₽</p>
-												<p class="sale-price sale-old-price">5938 ₽</p>
-											</div>
-											<p class="sale-link-description">Кросовки</p>
-										</div>
-									</a>
-								</li>
-								<li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
-											<p class=" sale sale-link-sale">-10%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">3902 ₽</p>
-												<p class="sale-price sale-old-price">4490 ₽</p>
-											</div>
-											<p class="sale-link-description">Постельное белье</p>
-										</div>
-									</a>
-								</li>
-								<li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
-											<p class=" sale sale-link-sale">-30%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">2999 ₽</p>
-												<p class="sale-price sale-old-price">6030 ₽</p>
-											</div>
-											<p class="sale-link-description">Фен</p>
-										</div>
-									</a>
-								</li>
-								<li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/bed-sheets.webp" alt="постельное белье">
-											<p class=" sale sale-link-sale">-10%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">3902 ₽</p>
-												<p class="sale-price sale-old-price">4490 ₽</p>
-											</div>
-											<p class="sale-link-description">Постельное белье</p>
-										</div>
-									</a>
-								</li>
-								<li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/hair-dryer.webp" alt="фен">
-											<p class=" sale sale-link-sale">-30%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">2999 ₽</p>
-												<p class="sale-price sale-old-price">6030 ₽</p>
-											</div>
-											<p class="sale-link-description">Фен</p>
-										</div>
-									</a>
-								</li>
-								<li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/mittens.webp" alt="варежки">
-											<p class=" sale sale-link-sale">-30%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">540 ₽</p>
-												<p class="sale-price sale-old-price">890 ₽</p>
-											</div>
-											<p class="sale-link-description">Варежки-мишки</p>
-										</div>
-									</a>
-								</li>
-								<li class="section-sale-item">
-									<a href="./" class="section-sale-link">
-										<div class="sale-link-top">
-											<img class="sale-link-img" src="img/singlet.webp" alt="футболки">
-											<p class=" sale sale-link-sale">-50%</p>
-										</div>
-										<div class="sale-link-content">
-											<div class="sale-price-wrapper">
-												<p class="sale-price sale-new-price">1299 ₽</p>
-												<p class="sale-price sale-old-price">2598 ₽</p>
-											</div>
-											<p class="sale-link-description">Пара футболок</p>
-										</div>
-									</a>
-								</li> -->
-							</ul>
+							<ul class="section-sale-list"></ul>
 						</div>
 					</div>
 				</div>
-			<!-- </div> -->
 		</main>
 		<footer class="footer">
 			<div class="container">
@@ -316,45 +199,14 @@
 						<div class="footer-content-center">
 						<div class="footer-content-center__wrapper footer-content-center__catalog">
               <div class="footer-title-wrapper">
-                <h2 class="footer-title">Каталог</h2>
+                <h3 class="footer-title">Каталог</h3>
                 <button class="footer-title-btn"></button>
               </div>
-							<ul class="menu-list footer-content-list footer-menu-list-categories">
-								<!-- <li class="footer-content-item">
-									<a href="#" class="footer-content-link">Смартфоны</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Ноутбуки</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Ювелирные изделия</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Одежда</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Бытовая техника</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Бытовая химия</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Книги и журналы</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Домашний текстиль</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Электроника</a>
-								</li>
-								<li class="footer-content-item">
-									<a href="#" class="footer-content-link">Косметика</a>
-								</li> -->
-							</ul>
+							<ul class="menu-list footer-content-list footer-menu-list-categories"></ul>
 						</div>
 						<div class="footer-content-center__wrapper">
               <div class="footer-title-wrapper">
-                <h2 class="footer-title">Покупателям</h2>
+                <h3 class="footer-title">Покупателям</h3>
                 <button class="footer-title-btn"></button>
               </div>
 							<ul class="footer-content-list-buyers">
@@ -368,14 +220,14 @@
 									<a href="#" class="footer-content-link-buyers">Условия возврата заказа</a>
 								</li>
 								<li class="footer-content-item-buyers">
-									<a href="#" class="footer-content-link-buyers">Блог</a>
+									<a href="#" class="footer-content-link-buyers footer-content-link-blog-footer">Блог</a>
 								</li>
 							</ul>
 						</div>
 						</div>
 						<div class="footer-content-right">
 							<div class="footer-content-contacts">
-								<h2 class="footer-title">Контакты</h2>
+								<h3 class="footer-title">Контакты</h3>
 								<p class="footer-contact footer-phone">Тел:
 									<a href="tel:+79378392361" class="footer-phone">+7 937 839 23-61</a>
 								</p>

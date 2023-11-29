@@ -41,13 +41,16 @@
 }
 @include tablet {
   .book {
-    padding: 48px 4px 15px 10px;
+    padding: 76px 55px 10px 10px;
+    border-radius: 8px;
   }
   .book__text {
-    font-size: 20px;
+    font-size: 12px;
+    line-height: 110%;
   }
   .book__span {
-    font-size: 26px;
+    line-height: 110%;
+    font-size: 16px;
   }
 }
 @include mobile {

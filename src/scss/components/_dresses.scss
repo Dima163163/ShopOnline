@@ -30,9 +30,11 @@
 
 @include tablet {
   .dresses {
-    align-items: end;
-    grid-column: 3 / 4;
-    grid-row: 5 / 8;
+    border-radius: 8px;
+    background-image: url("./../img/dec320.webp");
+    grid-column: 1 / 2;
+    grid-row: 7 / 9;
+    padding: 10px;
   }
 }
 

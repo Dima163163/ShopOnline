@@ -152,37 +152,38 @@
 }
 @include tablet {
   .laptop-disconts {
-    grid-column: 1/5;
-    padding: 64px 80px 33px;
+    grid-column: 1/3;
+    padding: 50px 29px 30px;
     grid-template-rows: repeat(2, auto);
+    border-radius: 8px;
   }
   .laptop-disconts__title {
-    font-size: 30px;
+    font-size: 22px;
     grid-row: 1/2;
-    max-width: 302px;
+    max-width: 222px;
+    align-self: start;
   }
-  .disconts-timer {
-    grid-template-rows: 16px 39px;
+  .disconts__timer {
+    grid-template-rows: 10px 26px;
     gap: 10px;
   }
   .timer__title {
-    font-size: 12px;
+    font-size: 8px;
   }
   .timer__list {
-    gap: 20px;
+    gap: 8px;
   }
   .timer__count {
-    font-size: 30px;
+    font-size: 20px;
     justify-self: end;
   }
   .timer__units {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
 @include mobile {
   .laptop-disconts {
-    // background-image: url("./../img/laptop320.webp");
     grid-column: 1/3;
     padding: 50px 29px 30px;
     grid-template-rows: repeat(2, auto);

@@ -45,10 +45,11 @@
 }
 @include tablet {
   .watch {
-    padding: 15px 10px 10px 5px;
+    padding: 28px 5px 5px 10px;
+    border-radius: 8px;
   }
   .watch__text {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 @include mobile {

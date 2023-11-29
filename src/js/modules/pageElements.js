@@ -14,6 +14,10 @@ const btnFavorite = document.querySelector('.header-panel__link-favorites');
 const sectionGoods = document.querySelector('.section-wrapper');
 const basketBtn = document.querySelector('.header-panel__link-basket');
 
+const btnBlogHeder = document.querySelector('.menu-link-blog-header');
+const btnBlogFooter =
+document.querySelector('.footer-content-link-blog-footer');
+
 
 const currentPage = 1;
 const blogsCads = 12;
@@ -33,4 +37,6 @@ export default {
   sectionGoods,
   basketBtn,
   btnFavorite,
+  btnBlogHeder,
+  btnBlogFooter,
 };

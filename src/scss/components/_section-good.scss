@@ -50,7 +50,6 @@
 
 .section-good-inner {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   gap: 20px;
 }
@@ -246,9 +245,13 @@
 }
 
 @include laptop {
+  .good-product-card {
+    width: 380px;
+    height: 213px;
+  }
   .good-image {
-    width: 540px;
-    height: 303px;
+    width: 380px;
+    height: 213px;
   }
   .section-good {
     margin-bottom: 60px;
@@ -259,10 +262,6 @@
   .section-good-title {
     font-size: 40px;
     max-width: 620px;
-  }
-  .good-product-card {
-    max-width: 540px;
-    height: 303px;
   }
   .good__sale {
     width: 66px;
@@ -303,6 +302,9 @@
 }
 
 @include tablet {
+  .section-good-inner {
+    flex-wrap: wrap;
+  }
   .good-image {
     width: 280px;
     height: 157px;

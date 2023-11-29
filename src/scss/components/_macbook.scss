@@ -47,12 +47,13 @@
 
 @include tablet {
   .macbook {
-    grid-column: 1 /3;
-    grid-row: 6/8;
-    padding: 80px 10px 10px 20px;
+    grid-column: 1 / 3;
+    grid-row: 6/7;
+    padding: 63px 5px 5px 10px;
+    border-radius: 8px;
   }
   .macbook__text {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 

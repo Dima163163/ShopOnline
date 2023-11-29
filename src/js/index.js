@@ -12,10 +12,11 @@ import {appendGoods} from './modules/appendGoods.js';
 import {openGood} from './modules/openGood.js';
 import {openBasket} from './modules/openBasket.js';
 import {openFavorite} from './modules/openFavorite.js';
+import {openBlogPage} from './modules/openBlogPage.js';
 const {blogInner, paginationSection, currentPage, blogsCads,
   menuBtn, menuImgBtn, menuBurger, listGoods,
   listCategories, sectionGoods, basketBtn,
-  footerListCategories, btnFavorite} = elements;
+  footerListCategories, btnFavorite, btnBlogHeder, btnBlogFooter} = elements;
 
 
 const timerWrapper = document.querySelector('.disconts-timer');
@@ -49,6 +50,8 @@ const init = async () => {
       fetchRequest, '/api/goods/category/', sectionGoods,
       createGoods, menuBurger, menuImgBtn, '/api/goods/discount');
   menuControl(menuBtn, menuImgBtn, menuBurger);
+  openBlogPage(btnBlogHeder, btnBlogFooter,
+      sectionGoods, menuBurger, menuImgBtn);
 };
 
 init();

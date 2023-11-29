@@ -72,7 +72,7 @@ const renderPaginationArrow = (blogWrapper) => {
   if (window.innerWidth > 768) {
     buttonLeft.style = `
     content: '';
-    background-image: url('../src/img/left-arrow-blog.svg');
+    background-image: url('./../img/left-arrow-blog.svg');
     background-position: center;
     background-repeat: no-repeat;
     width: 37px;
@@ -92,7 +92,7 @@ const renderPaginationArrow = (blogWrapper) => {
   if (window.innerWidth > 768) {
     buttonRight.style = `
     content: '';
-    background-image: url('../src/img/right-arrow-blog.svg');
+    background-image: url('./../img/right-arrow-blog.svg');
     background-position: center;
     background-repeat: no-repeat;
     width: 37px;

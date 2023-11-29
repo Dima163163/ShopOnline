@@ -1,7 +1,7 @@
 .menu {
   background-color: $white;
   position: absolute;
-  padding: 52px 75px 92px;
+  padding: 52px 0 92px;
   max-width: 100%;
   width: 100%;
   transform: translateY(-700px);
@@ -82,12 +82,16 @@
 }
 
 @include laptop {
+  .menu-list {
+    max-height: 335px;
+  }
   .menu {
     padding: 30 34px;
     transform: translateY(-1600px);
   }
   .menu-wrapper {
     flex-wrap: wrap;
+    gap: 30px;
   }
   @keyframes animationMenu {
     0% {
@@ -101,7 +105,7 @@
 
 @include tablet {
   .menu-catalog {
-    min-width: 220px;
+    min-width: 100%;
   }
   .menu {
     padding: 20 20px;
@@ -112,12 +116,12 @@
     gap: 20px;
   }
   .menu-list {
-    max-height: 510px;
+    max-height: 550px;
     flex-wrap: nowrap;
   }
   .menu-item,
   .menu-link {
-    width: 100%;
+    max-width: 100%;
   }
   .menu-title {
     font-size: 30px;

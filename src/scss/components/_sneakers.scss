@@ -14,6 +14,13 @@
   }
 }
 
+@include tablet {
+  .sneakers {
+    padding: 5px;
+    border-radius: 8px;
+  }
+}
+
 @include mobile {
   .sneakers {
     padding: 5px;

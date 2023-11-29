@@ -41,8 +41,9 @@
   }
   .section-container {
     display: grid;
-    grid-template-columns: 24% 22% 20% 20%;
-    grid-template-rows: 280px 140px 140px 60px 60px 60px 60px 337px;
+    justify-content: center;
+    grid-template-columns: 130px 130px;
+    grid-template-rows: 340px 130px 118px 280px 118px 118px 130px 130px 123px;
     gap: 20px;
   }
 }
